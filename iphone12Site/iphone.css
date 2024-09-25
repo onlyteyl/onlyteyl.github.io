@@ -1,0 +1,115 @@
+body {
+    color: rgb(255, 255, 255);
+    font-family: "DM Sans", sans-serif;
+
+
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 79px;
+    background-color: black;
+
+
+
+}
+
+.mainpic img {
+    width: 100%;
+
+}
+
+.subtitle-container {
+    background-color: black;
+    width: 100%;
+    height: 110px;
+}
+
+.content {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(255, 254, 254);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.dets-section {
+    background-color: black;
+    padding-bottom: 50px;
+
+
+
+}
+
+.detail-icon {
+    padding-top: 84px;
+    text-align: center;
+    color: white;
+    padding-bottom: 84px;
+}
+
+.dets-desc {
+    font-size: 16px;
+    text-align: justify;
+
+}
+
+.dets-title {
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 50px;
+
+
+}
+
+.full-spec-section {}
+
+.spec-title {
+    text-align: center;
+    font-size: 30;
+    font-weight: bold;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.spec-subtitle {
+    color: black;
+    font-weight: bold;
+
+}
+
+.list {
+    color: black;
+    font-size: 14px;
+}
+
+.spec-list-container {
+    margin-left: 50px;
+}
+
+.credits {
+    text-align: center;
+
+}
+
+.button {
+    height: 34px;
+    width: 191px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none !important;
+  }
