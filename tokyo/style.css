@@ -1,0 +1,231 @@
+body {
+    color: rgb(255, 255, 255);
+    font-family: 'poppins';
+    background-color: black;
+
+}
+
+.navbar {
+
+    background-color: black !important;
+    padding: 0.5rem 1rem; 
+}
+
+.banner {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative; 
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: rgb(180, 14, 14); 
+    transform: scaleX(0);
+    transition: transform 0.3s ease; 
+}
+
+.nav-link:hover {
+    background-color: rgb(180, 14, 14, 0.1); 
+    color: rgb(180, 14, 14); 
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); 
+}
+
+
+.navbar-brand img {
+    max-height: 50px; 
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+
+}
+
+.main-img {
+    background-image: url(img/mainBg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 606px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info-container {
+    background-color: black;
+    height: auto;
+
+}
+
+
+.nav-list {}
+
+.main-text-container {
+    padding-top: 170px;
+}
+
+.top-sub {
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+.btn-main {
+    height: 40px;
+    width: 120px;
+    background-color: rgb(180, 14, 14);
+    border-color: rgb(180, 14, 14);
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* .black-container{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+} */
+
+
+/* location container */
+
+
+.loc-container {
+    background-color: rgb(241, 241, 241);
+    height: auto;
+    /* overflow: hidden; */
+
+}
+
+.loc-title {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.loc-subtitle{
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* card */
+.card {
+    border-radius: 20px !important;
+}
+
+.card img {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    overflow: hidden;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 12px;
+}
+
+.btn-card {
+    height: 40px;
+    width: 180px;
+    background-color: rgb(180, 14, 14);
+    border-color: rgb(180, 14, 14);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 9px;
+
+
+
+
+}
+
+.card-body{
+    text-align: center;
+}
+
+.hover-card {
+    transition: 0.3s ease; 
+}
+
+.hover-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+
+
+
+/* info section */
+.about-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.tokyo-b{
+text-align: center;
+max-width: 100%;
+
+}
+.info-container {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+
+}
+
+/* credits */
+
+.bottom-img{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.credits{
+    text-align: center;
+    font-size: 12px;
+   margin-top: 10px;
+}
+
