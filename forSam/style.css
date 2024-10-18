@@ -1,0 +1,30 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.title{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+    font-family: 'poppins';
+	font-weight: bold;
+	color: white;
+}
+
+.message{
+	text-align: justify;
+    font-family: 'poppins';
+}
+
+.collage-img{
+text-align: center;
+}
+
+.collage-img img{
+	width: 100%;
+}
+
