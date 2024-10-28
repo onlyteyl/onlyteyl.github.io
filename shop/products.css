@@ -1,0 +1,202 @@
+.navbar {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: "Krona One", serif;
+    font-size: 13px;
+}
+
+.banner-container {
+    width: 100%;
+    height: 489px;
+    border-radius: 59px;
+    margin-top: 20px;
+    background-image: url(img/mainBanner.png);
+
+
+}
+
+/* animation for nav-bar */
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .navbar {
+    animation: slideIn 0.6s ease-out;
+  }
+  
+
+  .navbar .nav-link {
+    position: relative;
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #F44100; 
+    transform: scale(1.1); 
+  }
+  
+
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F44100;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover::after {
+    width: 100%; 
+  }
+  
+
+  .navbar-toggler {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler:hover {
+    transform: rotate(90deg);
+  }
+
+  /* main banner */
+  .img-mainbanner{
+    background-image: url(img/productbanner.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 59px;
+    height: 310px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+  }
+
+  /* title */
+  .allproduct-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Poppins", serif;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.allproduct-subtitle{
+    text-align: center;
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    margin-bottom: 50px;
+
+}
+
+/* line divider */
+
+.line-divider {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* card  */
+
+.card-container {
+    height: auto;
+    width: 224px;
+}
+
+.img-card-container {
+    width: 224px;
+   height: 292px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.img-card-container img{
+    width: 100%;
+}
+
+.product-title {
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.product-btn {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #F44100;
+    border-color: #F44100;
+}
+
+
+
+
+/* product animation */
+.card-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Scale and shadow effect on hover */
+  .card-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+  }
+  
+  /* Smooth transition for image */
+  .img-card-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-container:hover .img-card-container img {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+  }
+  
+  /* product service */
+  .main-container-service {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.service-promises-container {
+    text-align: center;
+    font-family: "Poppins", serif;
+}
+
+.img-promises img {
+    height: 88px;
+    width: 97px;
+}
+
+.title-promise {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subtitle-promise {
+    text-align: justify;
+    font-size: 14px;
+
+}

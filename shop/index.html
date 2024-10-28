@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shoppyfy | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+  <!-- krona one font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&display=swap" rel="stylesheet">
+
+  <!-- poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- for icons -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <!-- for animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link href="img/logoweb.png" rel="icon">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand px-5" href="#"><img src="img/logoicon.png" class="animate__animated animate__bounce animate__infinite animate__slower"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav justify-content-center  ms-auto  mb-2 mb-lg-0 nav-list px-5">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Info</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- MAIN BANNER -->
+  <div class="container">
+    <div class="banner-container animate__animated animate__bounceIn">
+      <div class="banner-info-container row">
+        <div class="banner-title">
+          ENJOY YOUR <br> ONLINE <span style="color: #F44100;">SHOPPING!</span>
+        </div>
+        <div class="banner-subtitle col-6 my-2">
+          Indulge in a seamless online shopping experience! Browse our curated collection at your leisure and enjoy
+          exclusive deals.Your perfect find is just a click away!
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-secondary col-3 my-2 btn-buynow">SHOP NOW!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- 3 THINGS -->
+   <div class="container">
+    <div class="row main-container-service">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="service-promises-container animate__animated animate__backInRight">
+          <div class="img-promises">
+            <img src="img/free-shipping.png" class="animate__animated animate__tada animate__infinite animate__slower">
+          </div>
+          <div class="title-promise">
+            <span style="color: #F44100;">FREE</span> SHIPPING
+          </div>
+          <div class="subtitle-promise">
+            Enjoy free shipping on all your favorite items! Shop now on Shopify and get your orders delivered to your
+            doorstep without extra cost. Don't miss out on this exclusive offer!
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="service-promises-container animate__animated animate__backInRight">
+          <div class="img-promises">
+            <img src="img/satisfaction.png" class="animate__animated animate__bounce animate__infinite animate__slower" >
+          </div>
+          <div class="title-promise">
+            <span style="color: #F44100;">100%</span> SATISFACTION
+          </div>
+          <div class="subtitle-promise">
+            Shop with confidence! We guarantee 100% satisfaction on every purchase. Love it, or your money back!
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="service-promises-container animate__animated animate__backInRight">
+          <div class="img-promises">
+            <img src="img/return.png" class="animate__animated animate__jello animate__infinite animate__slower">
+          </div>
+          <div class="title-promise">
+            <span style="color: #F44100;">EASY</span> RETURN
+          </div>
+          <div class="subtitle-promise">
+            Hassle-free shopping with our easy return policy! If you're not satisfied, returning your purchase is quick
+            and simple.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION DIVIDER -->
+  <div class="container">
+    <div class="line-divider">
+    </div>
+  </div>
+
+  <!-- new arrivals -->
+  <div class="container">
+    <div class="title-container">
+      <div class="new-arrival-title">
+        <span style="color: #F44100;">NEW</span> ARRIVALS
+      </div>
+    </div>
+  </div>
+  <!-- new arrivals / cards -->
+
+  <div class="container d-flex flex-wrap justify-content-center" id="cardContainer">
+    <!-- <div class="card-container mx-4 my-3" id="cardContainer">
+      <div class="img-card-container">
+        <img src="">
+      </div>
+      <div class="content-card-container">
+        <div class="row">
+          <div class="col-8 ps-3 py-2">
+            <div class="product-title">
+              product name
+            </div>
+            <div class="product-price">
+              price
+            </div>
+          </div>
+          <div class="col-4 text-center py-2">
+            <button type="button" class="btn btn-secondary product-btn">...</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+  </div>
+
+
+  <!-- SECTION DIVIDER -->
+  <div class="container">
+    <div class="line-divider">
+    </div>
+  </div>
+
+
+  <!-- featured product section -->
+
+  <div class="container">
+    <div class="title-container">
+      <div class="new-arrival-title animate__animated animate__pulse animate__infinite animate__slower"  style="text-align: start;">
+        <span style="color: #F44100;">FEATURED</span> ITEM
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container animate__animated animate__bounceIn">
+
+    <div class="featured-card-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="img-featured-container">
+            <img src="..." id="img">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="detail-featured-container">
+            <div class="featured-title" id="title">
+
+            </div>
+            <div class="featured-price" id="price">
+
+            </div>
+            <div class="featured-description" id="description">
+
+            </div>
+            <div>
+              <button type="button" class="btn btn-secondary col-3 my-2 btn-buynow">BUY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION DIVIDER -->
+    <div class="container">
+      <div class="line-divider">
+      </div>
+    </div>
+
+    <!-- limited edition section -->
+
+    <div class="container">
+      <div class="title-container animate__animated animate__pulse animate__infinite animate__slower">
+        <div class="new-arrival-title" style="text-align: end;">
+          <span style="color: #F44100;">LIMITED</span> ITEM
+        </div>
+      </div>
+    </div>
+
+
+    <div class="featured-card-container animate__animated animate__bounceIn">
+      <div class="row">
+        <div class="col-6">
+          <div class="detail-featured-container">
+            <div class="featured-title text-end" id="title2">
+
+            </div>
+            <div class="featured-price text-end" id="price2">
+
+            </div>
+            <div class="featured-description text-end" id="description2">
+
+            </div>
+            <div class="flex-wrap d-flex justify-content-end">
+              <button type="button" class="btn btn-secondary col-3 my-2 btn-buynow btn-rose">BUY</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="img-featured-container">
+            <img src="..." id="img2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="container">
+    <div class="line-divider">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container-fluid">
+      <footer class="text-center text-black">
+        <div class="container">
+          <section>
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-black">About us</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-black">Products</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-black">Help</a>
+                </h6>
+              </div>
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-black">Contact</a>
+                </h6>
+              </div>
+            </div>
+          </section>
+          <hr class="my-5" />
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p class="disclaimer">Disclaimer: Product availability, prices, promotions, and shipping offers are
+                  subject to change without prior notice and may vary by location or due to demand. While we strive to
+                  provide accurate descriptions, images, and product details, minor discrepancies may occur. Please
+                  review product information carefully before making a purchase, and contact us if you have questions.
+                  Our policies on 100% satisfaction, free delivery, and easy returns are designed to offer a seamless
+                  shopping experience, but certain conditions and restrictions may apply. We reserve the right to
+                  update, modify, or cancel offers as necessary to ensure a fair and safe shopping environment. Thank
+                  you for choosing us and happy shopping!
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="text-center p-3">
+          © 2024 Copyright: onlyteyl
+
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+  <script src="api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

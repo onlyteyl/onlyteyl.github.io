@@ -1,0 +1,290 @@
+
+/* nav-bar */
+.navbar {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: "Krona One", serif;
+    font-size: 13px;
+}
+
+.banner-container {
+    width: 100%;
+    height: 489px;
+    border-radius: 59px;
+    margin-top: 20px;
+    background-image: url(img/mainBanner.png);
+
+
+}
+
+/* animation for nav-bar */
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .navbar {
+    animation: slideIn 0.6s ease-out;
+  }
+  
+
+  .navbar .nav-link {
+    position: relative;
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #F44100; 
+    transform: scale(1.1); 
+  }
+  
+
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F44100;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover::after {
+    width: 100%; 
+  }
+  
+
+  .navbar-toggler {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler:hover {
+    transform: rotate(90deg);
+  }
+  
+
+  /* banner section */
+  
+
+.banner-info-container {
+    padding-top: 150px;
+    padding-left: 30px;
+
+}
+
+.banner-title {
+    font-family: "Poppins", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.banner-subtitle {
+    font-family: "Poppins", serif;
+    text-align: start;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.btn-buynow {
+    background-color: #F44100;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    border-color: #F44100;
+}
+
+/* service promise */
+
+.main-container-service {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.service-promises-container {
+    text-align: center;
+    font-family: "Poppins", serif;
+}
+
+.img-promises img {
+    height: 88px;
+    width: 97px;
+}
+
+.title-promise {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subtitle-promise {
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+/* line divider */
+
+.line-divider {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* new arrival section */
+
+.new-arrival-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Poppins", serif;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* card container */
+
+.card-container {
+    height: auto;
+    width: 224px;
+}
+
+.img-card-container {
+    width: 224px;
+   height: 292px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.img-card-container img{
+    width: 100%;
+}
+
+.product-title {
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.product-btn {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #F44100;
+    border-color: #F44100;
+}
+
+/* Card transition and perspective effect */
+.card-container {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+
+  .card-container:hover {
+    transform: translateY(-10px) rotateY(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .img-card-container {
+    transition: transform 0.4s ease;
+  }
+  
+  .card-container:hover .img-card-container {
+    transform: rotateY(-10deg) scale(1.05); 
+  }
+  
+
+  .product-btn {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-btn:hover {
+    background-color: #5a6268; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+  
+ 
+  .content-card-container {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .card-container:hover .content-card-container {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  
+  
+/* featured section */
+
+.featured-card-container{
+    margin-top: 50px;
+}
+
+.img-featured-container{
+    width: 100%;
+    height: 444px;
+     background-color: #ffffff;
+     border-radius: 24px;
+     overflow: hidden;
+ }
+
+ .detail-featured-container{
+    padding-top: 50px;
+    font-family: "Poppins", serif;
+    text-align: justify;
+
+ }
+
+ .featured-title{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ .featured-price{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+ }
+
+ .featured-description{
+    font-size: 14px;
+    margin-bottom: 20px;
+
+ }
+
+ .img-featured-container img{
+    overflow: hidden;
+    width: 100%;
+ }
+
+

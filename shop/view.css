@@ -1,0 +1,182 @@
+.navbar {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: "Krona One", serif;
+    font-size: 13px;
+}
+
+.banner-container {
+    width: 100%;
+    height: 489px;
+    border-radius: 59px;
+    margin-top: 20px;
+    background-image: url(img/mainBanner.png);
+
+
+}
+
+/* animation for nav-bar */
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .navbar {
+    animation: slideIn 0.6s ease-out;
+  }
+  
+
+  .navbar .nav-link {
+    position: relative;
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #F44100; 
+    transform: scale(1.1); 
+  }
+  
+
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F44100;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover::after {
+    width: 100%; 
+  }
+  
+
+  .navbar-toggler {
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler:hover {
+    transform: rotate(90deg);
+  }
+
+
+  /* banner */
+  .img-mainbanner{
+    background-image: url(img/viewbanner.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 59px;
+    height: 310px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+  }
+
+
+  /* product */
+
+  .featured-card-container{
+    margin-top: 50px;
+}
+
+.img-featured-container{
+    height: auto;
+     background-color: #ffffff;
+     border-radius: 24px;
+     overflow:hidden;
+   
+ }
+
+ .img-featured-container img{
+    width: 100%;
+   
+ }
+
+ .detail-featured-container{
+    padding-top: 150px;
+    font-family: "Poppins", serif;
+    text-align: justify;
+
+ }
+
+ .featured-title{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ .featured-price{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+ }
+
+ .featured-description{
+    font-size: 14px;
+    margin-bottom: 20px;
+
+ }
+
+ .img-featured-container img{
+    overflow: hidden;
+    width: 100%;
+ }
+
+ .btn-buynow {
+  background-color: #F44100;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  border-color: #F44100;
+}
+
+  /* line divider */
+
+.line-divider {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+ /* product service */
+ .main-container-service {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.service-promises-container {
+  text-align: center;
+  font-family: "Poppins", serif;
+}
+
+.img-promises img {
+  height: 88px;
+  width: 97px;
+}
+
+.title-promise {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.subtitle-promise {
+  text-align: justify;
+  font-size: 14px;
+
+}
