@@ -50,10 +50,12 @@ body {
     text-align: center;
     color: white;
     padding-bottom: 84px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .dets-desc {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
 
 }
@@ -61,7 +63,6 @@ body {
 .dets-title {
     font-size: 60px;
     font-weight: bold;
-    padding-top: 50px;
 
 
 }
@@ -94,6 +95,7 @@ body {
 
 .credits {
     text-align: center;
+    color: black;
 
 }
 
@@ -113,3 +115,51 @@ body {
 a {
     text-decoration: none !important;
   }
+
+  /* update  */
+.img-container{
+    width: 100%;
+    height: 329px;
+    margin-top: 20px;
+
+}
+
+.img-container img{
+width: 100%;
+height: 327px;
+}
+
+.content-container{
+    height: auto;
+}
+
+/* font responsive */
+@media (max-width: 819px) {
+    .detail-icon {
+        font-size: 20px;
+    }
+
+    .dets-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .dets-desc {
+        font-size: 10px;
+    }
+    .content{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .detail-icon {
+        font-size: 40px;
+    }
+
+}
+
+
+
+
+

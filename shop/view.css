@@ -1,3 +1,7 @@
+body, html {
+  overflow-x: hidden;
+}
+
 .navbar {
     background-color: black !important;
 }
@@ -129,6 +133,7 @@
  .featured-description{
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: justify;
 
  }
 
@@ -142,6 +147,7 @@
   font-family: "Poppins", serif;
   font-weight: bold;
   border-color: #F44100;
+  width:  200px;
 }
 
   /* line divider */
@@ -180,3 +186,122 @@
   font-size: 14px;
 
 }
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  /* Banner container */
+  .banner-container {
+    height: 400px;
+    border-radius: 30px;
+  }
+
+  /* Main Banner */
+  .img-mainbanner {
+    height: 250px;
+  }
+  
+  /* Product Details */
+  .detail-featured-container {
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  /* Footer Disclaimer */
+  .disclaimer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-link {
+    font-size: 10px;
+  }
+  
+  /* Main Banner */
+  .banner-container {
+    height: 300px;
+  }
+
+  /* Product Details */
+  .detail-featured-container {
+    padding-top: 30px;
+  }
+  
+  .featured-title {
+    font-size: 16px;
+  }
+
+  .featured-price,
+  .featured-description {
+    font-size: 12px;
+  }
+
+  .btn-buynow{
+    font-size: 8px;
+    width: 100px;
+  }
+
+  /* Line Divider */
+  .line-divider {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer */
+  .disclaimer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Navbar Collapse */
+  .navbar-toggler {
+    font-size: 12px;
+  }
+
+  /* Banner */
+  .img-mainbanner {
+    height: 200px;
+  }
+  
+  /* Product Section */
+  .featured-card-container {
+    margin-top: 20px;
+  }
+  
+  .img-featured-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-buynow{
+    font-size: 8px;
+  }
+  
+  /* Footer */
+  .disclaimer {
+    font-size: 9px;
+    width: auto;
+  }
+  
+  /* Service Promises */
+  .img-promises img {
+    height: 50px;
+    width: 60px;
+  }
+
+  .title-promise {
+    font-size: 16px;
+  }
+
+  .subtitle-promise {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+

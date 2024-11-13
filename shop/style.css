@@ -101,6 +101,7 @@
     font-size: 14px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: justify;
 
 }
 
@@ -287,4 +288,92 @@
     width: 100%;
  }
 
+/* Adjustments for small devices (tablets and large phones) */
+@media (max-width: 767px) {
+ 
+  /* Banner section adjustments */
+  .banner-info-container {
+    padding-top: 80px;
+    padding-left: 15px; 
+  }
+  
+  .banner-title {
+    font-size: 30px;
+  }
 
+  .banner-subtitle {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  /* Button resizing */
+  .btn-buynow {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  /* Service promises */
+  .service-promises-container {
+    margin-bottom: 20px;
+  }
+
+  .img-promises img {
+    height: 70px;
+    width: 80px;
+  }
+
+  /* Featured and limited items */
+  .featured-card-container .col-6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  .disclaimer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 12px;
+  }
+
+  /* Banner container adjustments */
+  .banner-container {
+    height: 320px;
+  }
+
+  .banner-title {
+    font-size: 24px;
+  }
+
+  .banner-subtitle {
+    font-size: 10px;
+  }
+
+  /* Button resizing */
+  .btn-buynow {
+    font-size: 12px;
+  }
+
+  /* Service promises */
+  .img-promises img {
+    height: 60px;
+    width: 70px;
+  }
+
+  .title-promise {
+    font-size: 18px;
+  }
+
+  .subtitle-promise {
+    font-size: 12px;
+  }
+
+
+  /* Footer */
+  .disclaimer {
+    font-size: 10px;
+  }
+}

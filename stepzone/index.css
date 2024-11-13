@@ -176,3 +176,64 @@
 .img-hoodie-container img{
     border-radius: 20px;
 }
+
+/* update */
+
+/* Navbar responsiveness */
+
+@media (max-width: 768px) {
+    .nav-title {
+        font-size: 30px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .btn-dark {
+        font-size: 16px;
+    }
+}
+
+/* Main title and button */ 
+@media (max-width: 768px) {
+    .title {
+        font-size: 48px;
+    }
+    .btn-order {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Shoe and Hoodie sections */
+
+@media (max-width: 768px) {
+    .shoe-section-title, .hoodie-title-container {
+        font-size: 24px;
+    }
+    .title{
+        font-size: 35px;
+    }
+}
+
+/* Card and Image Adjustments */
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    .shoe-title{
+        font-size: 18px;
+    }
+    .shoe-price{
+        font-size: 20px;
+    }
+}
+
+/* Footer text and container adjustments */
+
+@media (max-width: 768px) {
+    .disclaimer, .info-zone {
+        font-size: 16px;
+    }
+}

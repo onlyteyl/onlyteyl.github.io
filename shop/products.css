@@ -200,3 +200,25 @@
     font-size: 14px;
 
 }
+
+@media (max-width: 767px) {
+    /* Service promises */
+    .service-promises-container {
+      margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+  .img-promises img {
+    height: 60px;
+    width: 70px;
+  }
+
+  .title-promise {
+    font-size: 18px;
+  }
+
+  .subtitle-promise {
+    font-size: 12px;
+  }
+}
