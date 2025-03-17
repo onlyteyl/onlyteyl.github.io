@@ -1,0 +1,239 @@
+.nav-title {
+    font-family: "Krona One", sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.nav-link {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+}
+
+.btn-dark{
+    font-family: "Bebas Neue", sans-serif;
+    background-color: rgb(255, 209, 6);
+    border: 2px solid rgb(255, 209, 6);
+    color: black;
+}
+
+.bg-img {
+    background-image: url(img/mainbg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 745px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.title-container {
+    padding-top: 480px;
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 85px;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
+    color: white;
+}
+
+.btn-order {
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 209, 6);
+    border: 2px solid rgb(255, 209, 6);
+    font-weight: bold;
+
+}
+
+.shoe-section-title {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: "Krona One", sans-serif;
+    font-weight: bold;
+}
+
+.title-line {
+    margin-top: 5px;
+    width: 200px;
+    height: 5px;
+    background-color: rgb(255, 209, 6);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* card container */
+.card {
+    /* width: 240px;
+    height: 345px; */
+    border: none;
+
+}
+
+.card img {
+    /* width: 240px;
+    height: 206px; */
+    /* box-shadow: 0px 0px 010px rgba(0, 0, 0, 0.5); */
+    border-radius: 40px;
+
+}
+
+.shoe-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    line-height: 0.8;
+}
+
+.shoe-price {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.btn-add-to-cart {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 209, 6);
+    border: none;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.lower-bg-img {
+    background-image: url(img/bg2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 720px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.style-desc {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+
+}
+
+.info-zone {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: justify;
+
+}
+
+.title-container-comfort {
+    padding-top: 350px;
+    margin-left: 50px;
+}
+
+.btn-minfo {
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 209, 6);
+    border: 2px solid rgb(255, 209, 6);
+    font-weight: bold;
+}
+
+.disclaimer {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+/* hoodie section 2nd day coding*/ 
+
+.hoodie-bg{
+    background-image: url(img2/hoodiebg.png);
+    background-position: center;
+    background-size: cover;
+    height: 745px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.hoodie-title-container{
+    padding-top: 350px;
+
+}
+
+.hoodie-container{
+    width: 240px;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-bottom:50px;
+}
+
+.img-hoodie-container{
+    margin-bottom: 10px;
+}
+
+.img-hoodie-container img{
+    border-radius: 20px;
+}
+
+/* update */
+
+/* Navbar responsiveness */
+
+@media (max-width: 768px) {
+    .nav-title {
+        font-size: 30px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .btn-dark {
+        font-size: 16px;
+    }
+}
+
+/* Main title and button */ 
+@media (max-width: 768px) {
+    .title {
+        font-size: 48px;
+    }
+    .btn-order {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Shoe and Hoodie sections */
+
+@media (max-width: 768px) {
+    .shoe-section-title, .hoodie-title-container {
+        font-size: 24px;
+    }
+    .title{
+        font-size: 35px;
+    }
+}
+
+/* Card and Image Adjustments */
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    .shoe-title{
+        font-size: 18px;
+    }
+    .shoe-price{
+        font-size: 20px;
+    }
+}
+
+/* Footer text and container adjustments */
+
+@media (max-width: 768px) {
+    .disclaimer, .info-zone {
+        font-size: 16px;
+    }
+}
