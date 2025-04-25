@@ -1,0 +1,355 @@
+body {
+    background-color: #03061C;
+    color: white;
+    font-family:  "Poppins", sans-serif;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background: linear-gradient(120deg, #1D1E3D 0%, #26284C 100%);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    color: white;
+    height: 470px;
+}
+
+/* Custom card height adjustments */
+.card-half {
+    height: 225px;
+}
+
+/* Responsive stacking for top row */
+@media (max-width: 767px) {
+
+    .top-row>.col-md-3:nth-child(1),
+    .top-row>.col-md-3:nth-child(3) {
+        order: 2;
+    }
+
+    .top-row>.col-md-6 {
+        order: 1;
+    }
+}
+
+/* top row  */
+.green-div {
+    background: linear-gradient(135deg, #D2FC25, #90AC1D);
+}
+
+.purple-div {
+    background: linear-gradient(120deg, #693DD9 0%, #7A4FE1 50%, #8461E2 100%);
+}
+
+.cover-div{
+    background-image: url(img/banner-story-bg.png);
+    background-size: cover;
+    background-position: fixed;
+}
+
+/* introduction css for blipblop  */
+.title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.btn-custom {
+    display: inline-block;
+    margin: 1.5rem auto 0;
+    padding: 0.75rem 1.5rem;
+    background-color: #D2FC25;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:active {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.homebanner-title {
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    padding-top: 130px;
+    font-size: 64px;
+    line-height: 1;
+}
+
+.homebanner-subtitle {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.blop-bg {
+    background-image: url(img/blop-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blip-bg {
+    background-image: url(img/blip-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1166px) {
+    .homebanner-title {
+        font-size: 40px;
+    }
+
+    .homebanner-subtitle {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+}
+
+.custom-img {
+    max-width: 70%;
+    height: auto;
+}
+
+.description {
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.multo-div {
+    background: #215A62;
+}
+
+@media (max-width: 768px) {
+    .homebanner-title {
+        font-size: 28px;
+        padding-top: 80px;
+    }
+
+    .homebanner-subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.story-banner {
+    background-image: url(img/banner-story-bg.png);
+    height: auto;
+    width: 1312px;
+    background-size: cover;
+    background-position: fixed;
+    border-radius: 36px;
+
+}
+
+.line-divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.chapter{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1;
+}
+
+.chapter-title{
+    font-family:  "Poppins", sans-serif;
+    text-align: center;
+}
+
+.character-info-container {
+    background: #693DD9;
+    border-radius: 20px;          
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+    color: #eeeeee;
+  }
+  .character-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;             
+    font-weight: 700;
+    margin-bottom: 8px;  }         
+  .character-info {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;              
+    line-height: 24px;            
+    margin-bottom: 24px;         
+  }
+  @media (max-width: 575.98px) {
+    
+    .character-info-container {
+      padding: 16px;             
+    }
+    .character-title {
+      font-size: 20px;           
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+   
+    .character-info-container {
+      padding: 24px;              
+    }
+  }
+  @media (min-width: 768px) {
+   
+    .character-info-container {
+      padding: 32px;              
+    }
+  }
+
+
+
+.error-bg{
+    background-image: url(img/error-blip.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.blip-container{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.blip-container img{
+    width: 166px;
+    height: 166px;
+}
+
+.blip-title-container{
+    font-size: 200px;
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    line-height: 1;
+}
+
+.blip-subtitle-container{
+    text-align: center;
+    font-size: 14px;
+
+}
+
+
+
+@media (max-width: 615px){
+    .blip-title-container{
+        font-size: 100px;
+        line-height: 1;
+    }
+
+    .blip-subtitle-container{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .blip-container img{
+        width: 136px;
+        height: 136px;
+    }
+}
+
+/* Footer Styles */
+.blipblop-footer {
+    background-color: #693DD9;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    font-style: italic;
+  }
+  
+  .footer-right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .footer-right ul li {
+    margin-right: 15px;
+  }
+  
+  .footer-right ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-right ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-left {
+      margin-bottom: 15px;
+    }
+    
+    .footer-right ul {
+      flex-direction: column;
+    }
+    
+    .footer-right ul li {
+      margin-bottom: 10px;
+    }
+  }
+  
