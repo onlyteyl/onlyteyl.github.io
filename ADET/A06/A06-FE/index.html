@@ -1,0 +1,185 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- style -->
+    <link href="style.css" rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="icon" href="img-menu/americano.png">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-9 pt-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="card p-3 topcontainer">
+                            <div class="title-container">
+                                <div class="title">Cashier</div>
+                                <div class="subtitle pb-3">Payment Management</div>
+
+                                <div class="category-title"> <span style="font-weight: bold;">Menu</span> Category
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="d-flex flex-start flex-row categories overflow-scroll" id="categories">
+                                    <!-- category-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-3">
+                                <div class="card overflow-scroll p-3 maincontainer">
+                                    <div class="category-title">
+                                        <span style="font-weight: bold;">Menu</span> Category
+                                    </div>
+                                    <div class="d-flex flex-wrap" id="maincontainer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-3 pt-3">
+                <div class="card p-3 overflow-scroll" style="height: 100%;">
+                    <div class="category-title">
+                        <span style="font-weight: bold;">Menu</span> Category
+                    </div>
+                    <!-- SECTION DIVIDER -->
+                    <div class="container-fluid">
+                        <div class="line-divider">
+                        </div>
+                    </div>
+                    <div id="receipt">
+                        <div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="line-divider" style="height: 1px;">
+                        </div>
+                        <div class="mt-4 d-flex flex-row justify-content-between">
+                            <div><b>TOTAL</b></div>
+                            <div><b id="totalValue">0</b></div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
+                            <button class="btn btn-success w-100 w-md-auto">Order Now</button>
+                            <button class="btn btn-danger w-100 w-md-auto">Cancel Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var categories = [];
+                var products = [];
+
+                const getAllCategories = async () => {
+                    fetch(
+                        'http://localhost/ADET/A06/A06-BE/categories.php'
+                    )
+                        .then(response => response.json())
+                        .then(data => {
+                            categories = data;
+                            loadCategories();
+                        });
+                }
+
+                const getAllProducts = async (categoryID) => {
+                    const categoryData = {
+                        categoryID: categoryID
+                    };
+
+                    fetch(
+                        'http://localhost/ADET/A06/A06-BE/products.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(categoryData)
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            products = data;
+                            loadProducts();
+                        });
+                }
+
+                getAllCategories();
+
+                var total = 0;
+
+                function loadCategories() {
+                    var categoriesContainer = document.getElementById("categories");
+                    categories.forEach((category) => {
+                        categoriesContainer.innerHTML += `
+        <div onclick="getAllProducts('`+ category.categoryID + `')" class="category card mt-2 mx-2"style="background-image:url('` + category.img + `'); background-size: cover;">
+        <div class="title pt-5 px-2 text-white"style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">`+ category.name + `</div></div>`;
+                    });
+                }
+
+                function loadProducts(categoryID) {
+                    var maincontainer = document.getElementById("maincontainer");
+                    maincontainer.innerHTML = "";
+                    products.forEach(product => {
+                        maincontainer.innerHTML += `
+          <div onclick="addToReceipt(` + product.price + `, '` + product.code + `', '` + product.name + `')"" class="card product-card text-center">
+                                            <img src=" `+ product.img + `" class="product-img">
+                                            <div class="product-title">
+                                                `+ product.name + `
+                                            </div>
+                                            <div class="product-price">
+                                                ₱ `+ product.price + `
+                                            </div>
+                                        </div>`;
+                    });
+                }
+
+
+
+                function addToReceipt(price, code, name) {
+                    var receiptContainer = document.getElementById("receipt");
+                    total = parseFloat(total) + parseFloat(price);
+
+                    totalValueElement = document.getElementById("totalValue");
+                    totalValueElement.innerHTML = total;
+
+                    receiptContainer.innerHTML += `
+            <div class="d-flex flex-row justify-content-between">
+                                <div><small><span style="font-weight: bold;">`+ name + ` | </span>` + code + `</small></div>
+                                <div><small> ₱ `+ price + `</small></div>
+                            </div>
+
+      `;
+                }
+            </script>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
