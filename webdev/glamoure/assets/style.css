@@ -1,0 +1,318 @@
+/* Text color */
+body, .nav-link {
+  font-family: 'Poppins', sans-serif;
+  color: white !important;
+}
+
+/* fonts and size */
+.albert-font{
+  font-family: 'Albert Sans', sans-serif!important;
+}
+
+/* Base Font Sizes */
+.heading {
+  font-size: 40px; /* Desktop default */
+}
+.subheading {
+  font-size: 24px;
+}
+.caption {
+  font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 32px;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 28px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  .caption {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 24px;
+  }
+  .subheading {
+    font-size: 16px;
+  }
+  .caption {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 20px;
+  }
+  .subheading {
+    font-size: 14px;
+  }
+  .caption {
+    font-size: 11px;
+  }
+}
+
+
+.product-category-text{
+  font-size: 12px;
+}
+
+.product-title{
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+/* buttons */
+.btn-outline-white{
+  border: 3px solid rgb(255, 255, 255);
+background-color: none;
+color: white;
+}
+
+.btn-outline-black{
+  border: 2px solid rgb(0, 0, 0);
+background-color: none;
+color: rgb(0, 0, 0);
+}
+
+.btn-outline-white:hover{
+  background-color: white;
+  color: black;
+}
+
+/* Banner styles */
+.banner {
+  position: relative;
+  background-image: url("img/banner.png");
+  height: 956px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+.navbar-mobile {
+  display: block;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+
+@media (min-width: 994px) {
+  .navbar-desktop {
+    display: flex !important;
+  }
+  .navbar-mobile {
+    display: none !important;
+  }
+}
+
+
+/* carousel section */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+}
+
+
+
+.carousel-caption {
+  position: absolute;
+  inset: 0; /* Takes full slide area */
+  padding: 20px;
+}
+
+.carousel-bullets {
+  z-index: 10;
+}
+.bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bullet.active {
+  background: #fff;
+}
+
+
+.slider-nav {
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.carousel-logo img {
+  width: 150px;
+  height: 45px;
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+
+.carousel-logo.active img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .slider-nav {
+      display: none !important;
+  }
+}
+
+
+
+
+/* Category Card */
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-image {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.1);
+}
+
+.category-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.category-card:hover .category-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.category-title {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover .category-title {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+@media (max-width: 992px) {
+  .category-image {
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .category-image {
+    height: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .category-image {
+    height: 130px;
+  }
+}
+
+
+/* bundle section banner */
+.bundle-img{
+  width: 100%;
+  height: 380px;
+  background-position: center;
+ background-size: cover;
+}
+
+.bundle-caption-container{
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .bundle-caption-container{
+    width: 100%;
+  }
+}
+
+/* about us section */
+
+.about-container{
+  background-size: cover;
+  background-position: center;
+}
+
+.about-img-container img {
+  max-width: 100%; /* Default full width inside its column */
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Reduce image size on medium and smaller screens */
+@media (max-width: 768px) {
+  .about-img-container img {
+      max-width: 70%; /* Shrinks image for tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img-container img {
+      max-width: 60%; /* Shrinks image for mobile */
+  }
+}
+
+
+
+
+
+
