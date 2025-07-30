@@ -91,6 +91,7 @@ color: white;
   border: 2px solid rgb(0, 0, 0);
 background-color: none;
 color: rgb(0, 0, 0);
+height: auto;
 }
 
 .btn-outline-white:hover{
@@ -312,6 +313,56 @@ color: rgb(0, 0, 0);
 }
 
 
+/* promises section */
+.promises-container{
+  background-color: #E9F5F0;
+  width: 100%;
+}
+
+.testimonial-slider {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.testimonial {
+  flex: 0 0 auto;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 250px;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black; /* Default background if no image */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image covers the circle */
+}
+
+
+/* join us section */
+.join-us-container{
+  background-size: cover;
+  background-position: center;
+}
 
 
 
