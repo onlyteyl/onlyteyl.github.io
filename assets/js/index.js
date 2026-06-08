@@ -295,7 +295,7 @@ function buildCard(p, num) {
           <div class="project-front-info">
             <h3 class="project-title">${p.title}</h3>
             <p class="project-short">${p.short}</p>
-            <div class="project-flip-hint">Click to see details ↩</div>
+            <div class="project-flip-hint">Click to see details</div>
           </div>
         </div>
 
