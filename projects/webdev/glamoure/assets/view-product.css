@@ -1,0 +1,137 @@
+/* Text color */
+body,
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0) !important;
+}
+
+/* fonts and size */
+.albert-font {
+    font-family: 'Albert Sans', sans-serif !important;
+}
+
+/* Base Font Sizes */
+.heading {
+    font-size: 40px;
+    /* Desktop default */
+}
+
+.subheading {
+    font-size: 24px;
+}
+
+.caption {
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 32px;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .caption {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .subheading {
+        font-size: 16px;
+    }
+
+    .caption {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .subheading {
+        font-size: 14px;
+    }
+
+    .caption {
+        font-size: 12px;
+    }
+}
+
+.caption {
+    text-align: justify;
+}
+
+.promises-container {
+    background-color: #E9F5F0;
+    width: 100%;
+}
+
+.btn-add-carts,
+.btn-dark {
+    transition: all 0.3s ease;
+}
+
+/* Hover for Add to Cart (outline style) */
+.btn-add-carts:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover for Buy Now (solid style) */
+.btn-dark:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-add-carts, .btn-dark {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-add-carts:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-dark:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal.fade .modal-dialog {
+    transform: scale(0.95);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .modal.show .modal-dialog {
+    transform: scale(1);
+  }

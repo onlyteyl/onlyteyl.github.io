@@ -1,268 +1,619 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OnlyTeyL | Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet">
+  <title>OnlyTeyL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- import fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-<!-- icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<!-- animate.css -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-<link rel="icon" href="img/ot-logo-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo.png">
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container">
-      <a class="navbar-brand" href="https://github.com/onlyteyl" target="_blank"><img src="img/OYTL.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse container" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active mx-3" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-3" href="projects.html">PROJECT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-3" href="#">DESIGN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled mx-3" aria-disabled="true">CONTACT</a>
-          </li>
-        </ul>
+<!-- LOADING SCREEN -->
+<div class="loader-overlay" id="loaderOverlay">
+  <div class="loader-content">
+    <div class="loader-logo" id="loaderLogo">
+      OnlyTeyl
+      <span class="loader-logo-fill" id="loaderLogoFill">OnlyTeyl</span>
+    </div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill" id="loaderBarFill"></div>
+    </div>
+    <div class="loader-percent" id="loaderPercent">0%</div>
+  </div>
+</div>
+
+
+  <div class="blob blob-orange"></div>
+  <div class="blob blob-green"></div>
+  <div class="blob blob-amber"></div>
+
+  <div class="container-fluid p-0">
+
+ <!-- NAV -->
+<div class="nav-glass rounded-4 mx-3 mt-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg px-4 py-3">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" alt="OnlyTeyl" height="36" style="object-fit:contain;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-lg-3 text-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#design">Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
+      <div class="d-flex gap-3 justify-content-center justify-content-lg-end">
+        <div class="icon-container"><a href="https://www.facebook.com/allen.endaya.9"><i class="bi bi-facebook fs-5 nav-link-icon"></i></a></div>
+        <div class="icon-container"><a href="https://www.linkedin.com/in/allen-endaya-5413b2259/"><i class="bi bi-linkedin fs-5 nav-link-icon"></i></a></div>
+        <div class="icon-container"><a href="https://github.com/onlyteyl"><i class="bi bi-github fs-5 nav-link-icon"></i></a></div>
       </div>
     </div>
   </nav>
+</div>
 
-  <!-- HOME-BANNER -->
-  <div class="container-fluid p-0">
-    <div class="home-banner">
-      <div class="homebanner-title ">
-        ONLY<SPAN style="color: #FA6800;">TEYL</SPAN>
-      </div>
-      <div class="homebanner-subtitle">
-        A WEB DEVELOPER
-      </div>
-      <div class="d-flex justify-content-center">
-        <a><button class="btn btn-secondary homebanner-btn">CONTACT ME</button></a>
-      </div>
-    </div>
-  </div>
+<!-- HERO -->
+<div class="hero-wrapper mx-3 mt-2 mb-3" id="home">
+      <div class="hero rounded-5">
+        <div class="dot-grid"></div>
 
-  <!-- ABOUT ME -->
-  <div class="container about-container">
-    <div class="row py-3">
-      <div class="col-12 col-md-6 px-0">
-        <div class="about-img-container py-5">
-          <img src="img/about-img.png" class="img-fluid px-3" alt="About Me">
-        </div>
-      </div>
-      <div class="col-12 col-md-6 px-0">
-        <div class="px-3">
-          <div class="about-title">
-            ABOUT <span style="color: #FA6800;">ME</span>
+        <div class="hero-content text-center">
+          <div class="status-badge">
+            
+            Portfolio 2026 &nbsp;·&nbsp; Graduating Student
           </div>
-          <div class="about-subtitle">
-            Welcome to OnlyTeyl! I’m an IT student from PUP Sto. Tomas Campus with a passion for web development and a
-            strong commitment to turning ideas into interactive, user-friendly digital experiences. With a focus on
-            clean code, modern design, and seamless functionality, I create websites that are both visually appealing
-            and easy to navigate. My journey as a student drives me to constantly improve my skills and stay updated
-            with the latest trends in technology. Explore my portfolio to see how I blend creativity and technical
-            expertise to bring your digital vision to life.
-          </div>
+
+          <h1 class="hero-title">
+            OnlyTeyl
+            <span class="italic-line">Ideas become reality</span>
+          </h1>
+
+          <p class="hero-subtitle">Web Developer &nbsp;·&nbsp; UI/UX Designer &nbsp;·&nbsp; Front-End Developer</p>
+
+          <a href="#projects" class="btn-cta">
+            View My Work
+            <span class="cta-arrow">↗</span>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- services -->
-  <div class="container-fluid service-container">
-    <div class="container">
-      <div class="service-title">
-        MY <span style="color: #FA6800;">SERVICES</span>
-      </div>
-      <div class="btn-service-containers d-flex flex-wrap justify-content-center">
-        <a class="btn btn-secondary service-btn mx-1 my-2 pt-3" href="projects.html">WEB DEVELOPMENT</a>
-        <a class="btn btn-secondary service-btn mx-1 my-2 pt-3">GRAPHIC DESIGNING</a>
-        <a class="btn btn-secondary service-btn mx-1 my-2 pt-3">LOGO CREATING</a>
-      </div>
-      <div class="see-more">
-        Click the buttons to see more
-      </div>
-      <div class="about-subtitle">
-        I’m a versatile web developer, graphic designer, and logo creator with a passion for blending creativity and
-        functionality. My web development skills focus on creating responsive, user-friendly sites that stand out
-        visually and perform seamlessly. As a graphic designer, I bring ideas to life with eye-catching visuals tailored
-        to enhance brand storytelling. With expertise in logo creation, I design unique, memorable logos that capture
-        the essence of any brand.
-      </div>
-    </div>
-  </div>
 
 
-  <!-- HIRE ME -->
-  <div class="container hire-me-container">
-    <div class="hire-me-title">
-      YOUR <span style="color: #FA6800;">VISION</span>, MY <span style="color: #FA6800;">CODE</span>
-    </div>
-    <div class="hire-btn-container d-flex flex-wrap justify-content-center">
-      <button class="btn btn-secondary hire-btn">HIRE ME!</button>
+<!-- ABOUT ME -->
+<div class="about-wrapper mx-3 mb-3" id="about">
+  <div class="row g-3">
 
-    </div>
-  </div>
-
-  <!-- footer -->
-<div class=" my-5">
-
-  <footer
-          class="text-center text-lg-start text-white"
-          style="background-color: #101010"
-          >
-
-    <div class="container-fluid p-4 pb-0">
-      <section class="">
-        <div class="row">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-1" style="font-family:Dela Gothic One, sans-serif;">
-              ONLY<span style="color: #FA6800;">TEYL</span>
-            </h6>
-            <p style="font-size: 12px;">
-              Crafting user-friendly websites with creativity and code. Let's build something amazing together!
-            </p>
-          </div>
-
-
-          <hr class="w-100 clearfix d-md-none" />
-
-
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">WEBSITES</h6>
-            <p>
-              <a class="text-white">iphone12</a>
-            </p>
-            <p>
-              <a class="text-white">STEPZONE</a>
-            </p>
-            <p>
-              <a class="text-white">TOKYO</a>
-            </p>
-            <p>
-              <a class="text-white">SHOPPYFY</a>
-            </p>
-          </div>
-   
-
-          <hr class="w-100 clearfix d-md-none" />
-
-
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">
-              PERSONAL BRANDS
-            </h6>
-            <p>
-              <a class="text-white">TeyL Design</a>
-            </p>
-            <p>
-              <a class="text-white">Glance CLTH</a>
-            </p>
-            <p>
-              <a class="text-white"></a>
-            </p>
-            <p>
-              <a class="text-white"></a>
-            </p>
-          </div>
-          <hr class="w-100 clearfix d-md-none" />
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i class="fas fa-home mr-3"></i> Batangas, Philippines</p>
-            <p><i class="fas fa-envelope mr-3"></i> allenendaya43@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> +63 921 324 5762</p>
-          </div>
+    <!-- LEFT -->
+    <div class="col-12 col-lg-5">
+      <div class="about-img-card rounded-5 h-100">
+        <div class="dot-grid"></div>
+        <div class="about-img-wrapper">
+          <img src="assets/img/about-me.jpg" alt="Allen" class="about-img">
         </div>
-      </section>
-      <hr class="my-3">
-      <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
+      </div>
+    </div>
 
-            <div class="p-3">
-              © 2020 Copyright:
-              <a class="text-white" href="https://github.com/onlyteyl"
-                 >onlyteyl.github.io</a
-                >
+    <!-- RIGHT -->
+    <div class="col-12 col-lg-7">
+      <div class="about-info-card rounded-5 h-100">
+        <div class="dot-grid"></div>
+        <div class="position-relative z-1">
+          <div class="status-badge mb-3">
+            About Me
+          </div>
+          
+          <h2 class="about-title">
+            I'm Allen,
+            <span class="italic-line">a builder at heart.</span>
+          </h2>
+          
+          <p class="about-text">
+            I’m a 4th-year IT student, currently graduating and just waiting for my graduation. I specialize in front-end development and UI/UX design, focusing on creating interfaces that are both visually appealing and easy to use. Over the past 4 years, I’ve learned and developed a wide range of skills in web development, design, and problem-solving through academic and real-world projects. I’m now ready to work and open to professional opportunities where I can apply my knowledge, grow further, and turn ideas into functional web experiences.
+          </p>
+          
+          <p class="about-text">
+            When I'm not coding, I explore new design trends, experiment with creative tools, and look for new problems to solve.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Created</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4th</span>
+              <span class="stat-label">Year Student</span>
             </div>
           </div>
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
 
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-facebook-f"></i
-              ></a>
-
-
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-twitter"></i
-              ></a>
-
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-google"></i
-              ></a>
-
-
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-instagram"></i
-              ></a>
-          </div>
-    
+          <a href="assets/cv/Endaya - CV.pdf" class="btn-download-cv" download>
+            <i class="bi bi-download"></i>
+            Download my CV
+          </a>
         </div>
-      </section>
-
+      </div>
     </div>
 
-  </footer>
+  </div>
 
+  <!-- SKILLS-->
+  <div class="skills-card rounded-5 mt-3">
+    <div class="dot-grid"></div>
+    <p class="skills-label position-relative z-1">Technical Skills</p>
+    <div class="skills-track-container position-relative z-1">
+      <div class="skills-track" id="skillsTrack">
+        <div class="skill-item"><i class="bi bi-filetype-html"></i> HTML5</div>
+        <div class="skill-item"><i class="bi bi-filetype-css"></i> CSS3</div>
+        <div class="skill-item"><i class="bi bi-filetype-js"></i> JavaScript</div>
+        <div class="skill-item"><i class="bi bi-bootstrap"></i> Bootstrap</div>
+        <div class="skill-item"><i class="bi bi-filetype-php"></i> PHP</div>
+        <div class="skill-item"><i class="bi bi-database"></i> MySQL</div>
+        <div class="skill-item"><i class="bi bi-git"></i> Git</div>
+        <div class="skill-item"><i class="bi bi-bezier"></i> Figma</div>
+        <div class="skill-item"><i class="bi bi-code-slash"></i> React</div>
+        <div class="skill-item"><i class="bi bi-server"></i> Node.js</div>
+        <div class="skill-item"><i class="bi bi-boxes"></i> Odoo</div>
+        <div class="skill-item"><i class="bi bi-filetype-xml"></i> XML</div>
+        <div class="skill-item"><i class="bi bi-palette"></i> SCSS</div>
+        <div class="skill-item"><i class="bi bi-brush"></i> Canva</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
 
+
+<!-- PROJECTS -->
+<div class="projects-wrapper mx-3 mb-3" id="projects">
+  <div class="projects-main-card rounded-5">
+    <div class="dot-grid"></div>
+
+    <!-- Header -->
+    <div class="projects-header position-relative z-1">
+      <div class="status-badge mb-3">
+        My Work
+      </div>
+      <div class="projects-header-inner">
+        <h2 class="about-title">
+          Projects I've
+          <span class="services-italic">Designed & Developed</span>
+        </h2>
+
+        <!-- Category Tabs -->
+        <div class="project-tabs" id="projectTabs">
+          <button class="project-tab active" data-category="web-dev">Website Projects</button>
+          <button class="project-tab" data-category="full-stack">Full-Stack Projects</button>
+          <button class="project-tab" data-category="ui-design">UI/UX Design</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Track -->
+    <div class="projects-scroll-container position-relative z-1">
+      <div class="projects-track" id="projectsTrack">
+      </div>
+    </div>
+
+    <!-- Empty state -->
+    <div class="projects-empty position-relative z-1" id="projectsEmpty" style="display:none;">
+      <i class="bi bi-folder2-open"></i>
+      <p>No projects here yet — check back soon!</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- SERVICES -->
+<div class="services-wrapper mx-3 mb-3" id="services">
+  <div class="services-main-card rounded-5">
+    <div class="dot-grid"></div>
+
+    <!-- Header -->
+    <div class="services-header position-relative z-1">
+      <div class="status-badge mb-3">
+    
+        What I Offer
+      </div>
+      <h2 class="services-title">
+        Here's what I can
+        <span class="services-italic">build for you.</span>
+      </h2>
+    </div>
+
+    <div class="services-grid position-relative z-1" id="servicesGrid">
+
+      <div class="service-card rounded-4">
+        <div class="service-card-header">
+          <span class="service-num">01</span>
+          <h3 class="service-name">UI / UX Design</h3>
+        </div>
+        <p class="service-desc">
+          Crafting intuitive, beautiful interfaces that prioritize user experience —
+          from wireframes and prototypes to polished high-fidelity designs in Figma.
+        </p>
+      </div>
+
+      <div class="service-card rounded-4">
+        <div class="service-card-header">
+          <span class="service-num">02</span>
+          <h3 class="service-name">Front-End Development</h3>
+        </div>
+        <p class="service-desc">
+          Turning designs into fast, responsive, pixel-perfect web pages using
+          HTML5, CSS3, JavaScript, and modern frameworks like React and Bootstrap.
+        </p>
+      </div>
+
+     
+      <div class="service-card rounded-4">
+        <div class="service-card-header">
+          <span class="service-num">03</span>
+          <h3 class="service-name">Web Application Development</h3>
+        </div>
+        <p class="service-desc">
+          Building full web applications with dynamic features, database integration,
+          and clean back-end logic using PHP, MySQL, and Node.js.
+        </p>
+      </div>
+
+  
+      <div class="service-card rounded-4">
+        <div class="service-card-header">
+          <span class="service-num">04</span>
+          <h3 class="service-name">Responsive Design</h3>
+        </div>
+        <p class="service-desc">
+          Every project I build works flawlessly across all screen sizes —
+          desktop, tablet, and mobile — without sacrificing design quality.
+        </p>
+      </div>
+
+ 
+      <div class="service-card rounded-4">
+        <div class="service-card-header">
+          <span class="service-num">05</span>
+          <h3 class="service-name">Prototyping & Wireframing</h3>
+        </div>
+        <p class="service-desc">
+          Rapid prototyping to visualize ideas early, gather feedback, and
+          align on structure and flow before a single line of code is written.
+        </p>
+      </div>
+
+ 
+      <div class="service-card rounded-4">
+        <div class="service-card-header">
+          <span class="service-num">06</span>
+          <h3 class="service-name">Performance Optimization</h3>
+        </div>
+        <p class="service-desc">
+          Auditing and optimizing existing websites for speed, rendering performance,
+          and smooth animations so users get a fast, lag-free experience.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- GRAPHIC DESIGNS -->
+<div class="graphic-wrapper mx-3 mb-3" id="design">
+  <div class="projects-main-card rounded-5">
+    <div class="dot-grid"></div>
+
+    <!-- Header -->
+    <div class="projects-header position-relative z-1">
+      <div class="status-badge mb-3">
+        Creative Work
+      </div>
+      <div class="projects-header-inner">
+        <h2 class="about-title">
+          Visual Creations &amp;
+          <span class="services-italic">Design Projects</span>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Cards Track -->
+    <div class="projects-scroll-container position-relative z-1">
+      <div class="projects-track" id="graphicTrack">
+      </div>
+    </div>
+    <div class="projects-empty position-relative z-1" id="graphicEmpty" style="display:none;">
+      <i class="bi bi-palette2"></i>
+      <p>No graphic designs here yet — check back soon!</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+<!-- CONTACT -->
+<div class="contact-wrapper mx-3 mb-3" id="contact">
+  <div class="contact-main-card rounded-5">
+    <div class="dot-grid"></div>
+ 
+    <!-- LEFT -->
+    <div class="contact-left">
+      <div class="status-badge mb-3">
+        Get In Touch
+      </div>
+ 
+      <h2 class="contact-title">
+        Let's Work
+        <span class="italic-accent">Together.</span>
+      </h2>
+ 
+      <p class="contact-subtitle">
+        Have a project in mind, a question, or just want to say hello?
+        Fill out the form and I'll get back to you as soon as possible.
+      </p>
+ 
+      <div class="contact-info-list">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">Location</span>
+            <span class="contact-info-value">Malvar, Batangas, Philippines</span>
+          </div>
+        </div>
+ 
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">Email</span>
+            <span class="contact-info-value">allenendaya43@gmail.com</span>
+          </div>
+        </div>
+ 
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <i class="bi bi-phone-fill"></i>
+          </div>
+          <div class="contact-info-text">
+            <span class="contact-info-label">Phone</span>
+            <span class="contact-info-value">+63 921 324 5762</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="contact-socials">
+        <a href="https://www.facebook.com/allen.endaya.9" class="contact-social-btn"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="https://www.linkedin.com/in/allen-endaya-5413b2259/" class="contact-social-btn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/onlyteyl" class="contact-social-btn"><i class="bi bi-github"></i> GitHub</a>
+        <a href="#" class="contact-social-btn"><i class="bi bi-instagram"></i> Instagram</a>
+      </div>
+    </div>
+
+    <!-- RIGHT — FORM -->
+    <div class="contact-form-card">
+
+      <!-- Step bar -->
+      <div class="contact-step-bar">
+        <span class="step-label">Step <span id="stepCurrent">01</span> / 02</span>
+        <div class="step-track">
+          <div class="step-fill" id="stepFill" style="width: 50%;"></div>
+        </div>
+        <span class="step-names" id="stepName">PERSONAL · MESSAGE</span>
+      </div> 
+      <!-- STEP 1: Personal info -->
+      <div class="form-step active" id="step1">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Full Name</label>
+            <input type="text" id="contact-name" placeholder="e.g. Juan dela Cruz" autocomplete="off">
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" id="contact-email" placeholder="you@email.com" autocomplete="off">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Subject</label>
+            <input type="text" id="contact-subject" placeholder="What's this about?">
+          </div>
+          <div class="form-field">
+            <label>Phone (optional)</label>
+            <input type="text" id="contact-phone" placeholder="+63 9XX XXX XXXX">
+          </div>
+        </div>
+ 
+        <div class="form-actions">
+          <button class="btn-form-next" onclick="contactNextStep()">
+            Continue <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+ 
+      <!-- STEP 2: Message -->
+      <div class="form-step" id="step2">
+        <div class="form-field">
+          <label>Your Message</label>
+          <textarea id="contact-message" placeholder="Tell me about your project, idea, or just say hi..."></textarea>
+        </div>
+ 
+        <div class="form-actions">
+          <button class="btn-form-back" onclick="contactPrevStep()">
+            <i class="bi bi-arrow-left"></i> Back
+          </button>
+          <button class="btn-form-send" id="sendBtn" onclick="contactSend()">
+            <i class="bi bi-send-fill"></i> Send Message
+          </button>
+        </div>
+      </div>
+ 
+      <!-- Success state -->
+      <div class="contact-success" id="contactSuccess">
+        <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+        <h3 class="success-title">Message Sent!</h3>
+        <p class="success-text">
+          Thanks for reaching out. I'll get back to you at
+          <strong id="successEmail" style="color:#38BDF8;"></strong> soon.
+        </p>
+      </div>
+ 
+    </div>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- FAQ -->
+<div class="faq-wrapper mx-3 mb-3" id="faq">
+  <div class="faq-main-card rounded-5">
+    <div class="dot-grid"></div>
+
+    <!-- Left -->
+    <div class="faq-left position-relative z-1">
+      <div class="status-badge mb-3">QUESTIONS</div>
+      <h2 class="faq-title">
+        Frequently
+        <span class="italic-accent">Asked.</span>
+      </h2>
+      <p class="faq-subtitle">
+        Got questions about me, my work, or how I collaborate?
+        Here are the ones I get asked the most.
+      </p>
+    
+    </div>
+
+    <!-- Right -->
+    <div class="faq-accordion position-relative z-1" id="faqAccordion">
+
+      <div class="faq-item active" data-faq="0">
+        <button class="faq-question">
+          <span>Who are you and what do you do?</span>
+          <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>I'm Allen, a 4th-year IT student graduating in 2026. I specialize in front-end development and UI/UX design — building interfaces that are both visually polished and easy to use. I work across the full stack when needed, but my heart is in the design and front-end layer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq="1">
+        <button class="faq-question">
+          <span>Are you open to freelance or part-time work?</span>
+          <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! I'm currently open to freelance projects, part-time role. Whether it's a small landing page or a full web application, I'm happy to discuss how I can help bring your idea to life.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq="2">
+        <button class="faq-question">
+          <span>What technologies do you work with?</span>
+          <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            My core stack includes HTML5, CSS3, JavaScript, Bootstrap, and more for the front end. On the back end, I work with PHP, MySQL, and Node.js. I also use Figma for UI/UX design and wireframing, and Git for version control. Currently, I am also studying React and other programming languages to further improve my skills and develop faster, more efficient web applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq="3">
+        <button class="faq-question">
+          <span>How long does it take you to complete a project?</span>
+          <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>It depends on the scope. A simple landing page can take 3–5 days. A multi-page website with custom design usually takes 1–3 weeks. Full-stack web applications vary based on features and complexity. I always provide a timeline estimate upfront after reviewing the requirements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq="4">
+        <button class="faq-question">
+          <span>Do you work alone or with a team?</span>
+          <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Both! I'm comfortable working independently and taking full ownership of a project, but I've also collaborated in team environments on academic and real-world projects. I communicate clearly and adapt well to different workflows and tools.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-faq="5">
+        <button class="faq-question">
+          <span>How can I get in touch with you?</span>
+          <span class="faq-icon"><i class="bi bi-plus-lg"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>The easiest way is through the contact form above or by emailing me directly at <strong style="color:#38BDF8;">allenendaya43@gmail.com</strong>. I typically respond within 24–48 hours. You can also reach me on Facebook, LinkedIn, or GitHub — links are in the nav and footer.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer-wrapper mx-3 mt-3 mb-3">
+  <div class="footer-main rounded-5">
+    <div class="dot-grid"></div>
+    <div class="footer-top position-relative z-1">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">OnlyTeyl</div>
+        <div class="footer-tagline">Portfolio · 2026</div>
+        <p class="footer-desc">Building beautiful, functional web experiences — one project at a time.</p>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom position-relative z-1">
+      <span>© 2026 Allen Endaya · Built with passion & too much caffeine ☕</span>
+      <div class="footer-bottom-right">
+        <span>Available for work</span>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+
+
+<div id="projectModals"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/email.min.js"></script>
+</body>
 </html>

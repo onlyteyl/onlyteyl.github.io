@@ -1,0 +1,457 @@
+body {
+    font-family: "Poppins", serif;
+    color: white;
+    background-color: #101010;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAV BAR */
+.navbar {
+    background-color: #101010 !important;
+}
+
+.nav-link {
+    color: white !important;
+
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+
+    transform: scale(1.1);
+}
+
+/* homebanner */
+
+.home-banner {
+    background-image: url(img/home-banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 461px;
+}
+
+/* banner title */
+.homebanner-title {
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    padding-top: 130px;
+    font-size: 64px;
+    line-height: 1;
+}
+
+.main-title {
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 64px;
+    line-height: 1;
+}
+
+.homebanner-subtitle {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 5px;
+
+}
+
+@media (max-width: 640px) {
+    .homebanner-title {
+        font-size: 40px;
+    }
+
+    .homebanner-subtitle {
+        font-size: 12px;
+    }
+}
+
+/* home banner button */
+.homebanner-btn {
+    width: 229px;
+    height: 51px;
+    border-radius: 76px;
+    margin-top: 10px;
+    background: linear-gradient( #ff4d4d, #ff9900);
+    border-color: none;
+
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+.homebanner-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 77, 77, 0.5);
+    color: rgb(255, 255, 255);
+  }
+
+@media (max-width: 640px) {
+    .homebanner-btn {
+        width: 150px;
+        height: 30px;
+
+        font-size: 12px ;
+    }
+}
+
+/* about me  */
+.about-container {
+    height: auto;
+    background-color: #101010;
+    width: 100%;
+}
+
+.about-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.about-title {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+.about-subtitle {
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+/* Responsive adjustments */
+@media(max-width: 640px) {
+    .about-title {
+        font-size: 30px;
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .about-subtitle {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 991px) {
+    .about-title {
+        font-size: 40px;
+    }
+
+}
+
+/* service */
+
+.service-container {
+    width: 100%;
+    height: auto;
+    background-color: #232323;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Dela Gothic One", sans-serif;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff; 
+}
+
+.service-btn {
+    width: 311px;
+    height: 60px;
+    background-color: #FA6800;
+    border-color: #FA6800;
+    border-radius: 31px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.btn-service-containers{
+    margin-bottom: 5px;
+}
+
+.see-more{
+    text-align: center;
+font-size: 10px;
+line-height: 0;
+
+}
+
+
+@media(max-width: 640px) {
+    .service-title {
+        font-size: 24px; 
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .service-btn {
+        font-size: 10px;
+        width: 100%; 
+        height: 50px;
+        margin-bottom: 10px; 
+    }
+
+    .btn-service-containers {
+        display: block; 
+    }
+}
+
+/* hire me  */
+.hire-me-container{
+width: 100%;
+height: auto;
+}
+
+.hire-me-title{
+text-align: center;
+font-family: "Dela Gothic One", sans-serif;
+font-size: 32px;
+padding-top: 40px;
+padding-bottom: 10px;
+}
+
+.hire-btn{
+    width: 190px;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Dela Gothic One", sans-serif;
+    border-radius: 31px;
+    background-color: #FA6800;
+    border-color: #FA6800;
+
+
+}
+
+.hire-btn-container{
+    padding-bottom: 40px;
+}
+
+
+
+@media(max-width: 640px) {
+    .hire-me-title {
+        font-size: 24px; 
+        padding-top: 20px;
+    }
+}
+
+/* PROJECT.HTML */
+
+.btn-web{
+    width: 190px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 31px;
+    background-color: #FA6800;
+    border-color: #FA6800;
+    font-weight: bold;
+
+}
+
+.line-divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* 404 */
+
+.error-icon{
+    align-items: center;
+
+
+}
+
+.error-bg{
+    background-image: url(img/error-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.fox-container{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.fox-container img{
+    width: 166px;
+    height: 166px;
+}
+
+.fox-title-container{
+    font-size: 200px;
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    line-height: 1;
+}
+
+.fox-subtitle-container{
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.error-btn{
+    width: 238px;
+    height: 50px;
+    border-radius: 31px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5;
+    background-color: #FA6800;
+    border-color: #FA6800;
+}
+
+.movie-desc{
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.projects-btn {
+    background: linear-gradient( #ff4d4d, #ff9900);
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin: 0 10px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .projects-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 77, 77, 0.5);
+    color: rgb(255, 255, 255);
+  }
+
+
+
+@media (max-width: 615px){
+    .fox-title-container{
+        font-size: 100px;
+        line-height: 1;
+    }
+
+    .fox-subtitle-container{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .error-btn{
+        width: 150px;
+        height: 50px;
+    }
+
+    .copyright-container{
+        font-size: 10px;
+    }
+
+    .fox-container img{
+        width: 136px;
+        height: 136px;
+    }
+}
+
+
+/* ============================================================
+   LOADING SCREEN
+   ============================================================ */
+   .loader-overlay {
+    position: fixed;
+    inset: 0;
+    background: #0d0b09;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader-overlay.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    animation: fadeUp 0.6s ease both;
+}
+
+.loader-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 8vw, 80px);
+    font-weight: 700;
+    color: #f5efe8;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    position: relative;
+}
+
+.loader-logo::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #38BDF8, #7DD3FC);
+    border-radius: 100px;
+    animation: lineGrow 1.8s ease forwards 0.3s;
+}
+
+@keyframes lineGrow {
+    to { width: 100%; }
+}
+
+.loader-tagline {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.25);
+    margin-top: 4px;
+}
+
+.loader-bar-track {
+    width: 200px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.loader-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #38BDF8, #7DD3FC);
+    border-radius: 100px;
+    transition: width 0.1s linear;
+}
+
+.loader-percent {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: rgba(56, 189, 248, 0.6);
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
