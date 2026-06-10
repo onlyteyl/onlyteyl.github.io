@@ -300,11 +300,27 @@
                 <div class="prog-times"><span id="pcur">0:00</span><span id="ptot">0:00</span></div>
                 <audio id="audio-player"></audio>
                 <div class="music-ctrl">
-                    <button class="mc" onclick="audioPrev()">⏮</button>
-                    <button class="mc play" id="playbtn" onclick="audioToggle()">▶</button>
-                    <button class="mc" onclick="audioNext()">⏭</button>
+                    <button class="mc" onclick="audioPrev()">
+                        <i class="bi bi-skip-backward-fill"></i>
+                    </button>
+                
+                    <button class="mc play" id="playbtn" onclick="audioToggle()">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                
+                    <button class="mc" onclick="audioNext()">
+                        <i class="bi bi-skip-forward-fill"></i>
+                    </button>
                 </div>
-                <div class="vol-row"><span>🔈</span><input type="range" min="0" max="100" value="70" oninput="setVol(this.value)"/><span>🔊</span></div>
+                
+                <div class="vol-row">
+                    <i class="bi bi-volume-down-fill"></i>
+                
+                    <input type="range" min="0" max="100" value="70" oninput="setVol(this.value)"/>
+                
+                    <i class="bi bi-volume-up-fill"></i>
+                </div>
+                
                 <div id="music-playlist-wrap"></div>
             </div>
         </div>
