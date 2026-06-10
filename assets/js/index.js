@@ -212,6 +212,20 @@ const projectsData = [
     tags: ["Figma", "JavaScript", "HTML", "CSS", "Bootstrap"],
     siteUrl: "projects/webdev/Onlyteyl 1.0/index.html",
   },
+
+  {
+    id: "proj16",
+    category: "web-dev",
+    image: "assets/img/project-img/img9.jpg",
+    images: [
+      "assets/img/project-img/img9.jpg",
+    ],
+    title: "LoveOS",
+    short: "oveOS is a love-themed personal website dedicated to my girlfriend, featuring messages, memories, and small interactive moments built with love.",
+    description: "LoveOS is a personal love-themed web experience created as a digital space dedicated to my girlfriend. It is designed to showcase memories, messages, and small interactive features that represent our journey together. Built with love and creativity, LoveOS serves as a unique online space where feelings, appreciation, and special moments are turned into a simple but meaningful experience through design and code.",
+    tags: ["Figma", "JavaScript", "HTML", "CSS"],
+    siteUrl: "projects/SELF PROJECT/MacOS-UI/index.html",
+  },
 ];
 
 let activeCategory = "web-dev";
