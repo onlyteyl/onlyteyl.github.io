@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" rel="stylesheet">
+  <title>Your Invitation 💌</title>
+  <link href="img/heart.png" rel="icon">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(160deg, #fff0f6 0%, #fce4ef 40%, #fdf0fa 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow-x: hidden;
+    }
+
+    .envelope-wrap {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .envelope-icon {
+      font-size: 60px;
+      margin-bottom: 8px;
+      animation: wiggle 2s ease-in-out infinite;
+      display: block;
+    }
+
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-6deg); }
+      50%       { transform: rotate(6deg); }
+    }
+
+    .pre-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c2436e;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .invite-card {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.95);
+      border-radius: 28px;
+      padding: 40px 32px;
+      box-shadow: 0 8px 40px rgba(212,83,126,0.12), 0 1px 0 white inset;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .invite-card::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, rgba(232,150,184,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .invite-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 44px;
+      font-weight: 700;
+      color: #c2436e;
+      margin-bottom: 6px;
+      text-shadow: 0 2px 12px rgba(194,67,110,0.1);
+    }
+
+    .invite-subtitle {
+      font-size: 12px;
+      color: #c27090;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .invite-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .invite-divider span.line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,83,126,0.3), transparent);
+    }
+
+    .invite-divider span.hrt { font-size: 16px; color: #e896b8; }
+
+    .invite-body {
+      font-size: 14px;
+      line-height: 1.9;
+      color: #7a3e55;
+      margin-bottom: 28px;
+    }
+
+    /* Fill this in with your actual invitation details */
+    .detail-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fbeaf0;
+      border: 1px solid #f4c0d1;
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .detail-icon {
+      width: 36px; height: 36px;
+      background: white;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: #c2436e;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .detail-label { font-size: 10px; color: #c27090; letter-spacing: 1px; text-transform: uppercase; }
+    .detail-value { font-size: 14px; font-weight: 500; color: #7a3e55; }
+
+    .rsvp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #c2436e, #e06092);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+      margin-top: 16px;
+      box-shadow: 0 4px 20px rgba(194,67,110,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .rsvp-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(194,67,110,0.4);
+      color: white;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #c27090;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: #c2436e; }
+
+    .footer-hearts {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #e896b8;
+      letter-spacing: 6px;
+      animation: heartBeat 2s ease-in-out infinite;
+    }
+
+    @keyframes heartBeat {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="envelope-wrap">
+    <span class="envelope-icon">💌</span>
+    <p class="pre-label">you've got a special delivery</p>
+
+    <div class="invite-card">
+      <div class="invite-title">You're Invited!</div>
+      <div class="invite-subtitle">a special surprise for my sam</div>
+
+      <div class="invite-divider">
+        <span class="line"></span>
+        <span class="hrt">♡</span>
+        <span class="line"></span>
+      </div>
+
+      <p class="invite-body">
+        Hi love! I'd love nothing more than to spend a special day together — just you and me. 
+        Consider this your official invitation to a date that I've planned especially for you. 
+        Your only job? Show up and let me take care of everything. 🌸
+      </p>
+
+      <!-- EDIT THESE DETAILS with your actual plans -->
+      <div class="detail-row">
+        <div class="detail-icon"><i class="ti ti-calendar"></i></div>
+        <div>
+          <div class="detail-label">Date</div>
+          <div class="detail-value">To be revealed soon 🌸</div>
+        </div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-icon"><i class="ti ti-map-pin"></i></div>
+        <div>
+          <div class="detail-label">Where</div>
+          <div class="detail-value">Somewhere special — for us 💕</div>
+        </div>
+      </div>
+      <div class="detail-row">
+        <div class="detail-icon"><i class="ti ti-shirt"></i></div>
+        <div>
+          <div class="detail-label">Dress code</div>
+          <div class="detail-value">Whatever makes you feel beautiful ✨</div>
+        </div>
+      </div>
+
+      <a href="#" class="rsvp-btn">
+        Accept Invitation &nbsp; <i class="ti ti-heart"></i>
+      </a>
+
+      <br>
+      <a href="banner.html" class="back-link">
+        <i class="ti ti-arrow-left"></i> Back to the letter
+      </a>
+    </div>
+
+    <div class="footer-hearts">♡ &nbsp; ♡ &nbsp; ♡</div>
+  </div>
+
+</body>
+</html>

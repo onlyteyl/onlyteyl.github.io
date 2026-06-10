@@ -89,9 +89,9 @@ const projectsData = [
   {
     id: "proj7",
     category: "full-stack",
-    image: "assets/img/project-img/serveit1.png",
+    image: "assets/img/project-img/Serveit1.png",
     images: [
-      "assets/img/project-img/serveit1.png",
+      "assets/img/project-img/Serveit1.png",
     ],
     title: "ServeIT",
     short: "Main contributor for ServeIt, responsible for UI/UX design and full-stack development, ensuring a clean, functional, and user-friendly system.",
