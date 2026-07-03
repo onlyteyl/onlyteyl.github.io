@@ -1,19 +1,19 @@
 
 const projectsData = [
   {
-    id: "proj1",
-    category: "web-dev",
-    image: "assets/img/project-img/IPHONE 12 - 1.png",
-    images: [
-      "assets/img/project-img/IPHONE 12 - 1.png",
-      "assets/img/project-img/iphone 12 - 2.png",
-      "assets/img/project-img/IPHONE 12 - 3.png",
-    ],
-    title: "Iphone 12 Site",
-    short: "A sleek beginner web project showcasing the iPhone 12's features, specs, and design in a clean and user-friendly layout.",
-    description: "This is my first website as a web developer, created to showcase the iPhone 12 in a clean and modern layout. It highlights the device's key features such as the Super Retina XDR display, A14 Bionic chip, and advanced camera system. The site is designed to give users a smooth and engaging experience while exploring the phone's specifications and capabilities. It reflects my early skills in HTML, CSS, and UI design, focusing on structure, readability, and visual appeal. This project represents my starting point in building responsive and user-friendly websites.",
-    tags: ["Html", "Css", "Bootstrap"],
-    siteUrl: "projects/webdev/iphone12Site/iphone.html",
+    // id: "proj1",
+    // category: "web-dev",
+    // image: "assets/img/project-img/IPHONE 12 - 1.png",
+    // images: [
+    //   "assets/img/project-img/IPHONE 12 - 1.png",
+    //   "assets/img/project-img/iphone 12 - 2.png",
+    //   "assets/img/project-img/IPHONE 12 - 3.png",
+    // ],
+    // title: "Iphone 12 Site",
+    // short: "A sleek beginner web project showcasing the iPhone 12's features, specs, and design in a clean and user-friendly layout.",
+    // description: "This is my first website as a web developer, created to showcase the iPhone 12 in a clean and modern layout. It highlights the device's key features such as the Super Retina XDR display, A14 Bionic chip, and advanced camera system. The site is designed to give users a smooth and engaging experience while exploring the phone's specifications and capabilities. It reflects my early skills in HTML, CSS, and UI design, focusing on structure, readability, and visual appeal. This project represents my starting point in building responsive and user-friendly websites.",
+    // tags: ["Html", "Css", "Bootstrap"],
+    // siteUrl: "projects/webdev/iphone12Site/iphone.html",
   },
   {
     id: "proj2",
@@ -72,17 +72,17 @@ const projectsData = [
   },
 
   {
-    id: "proj6",
-    category: "web-dev",
-    image: "assets/img/project-img/ironman1.jpg",
-    images: [
-      "assets/img/project-img/ironman1.jpg",
-    ],
-    title: "Iron Man Parallax",
-    short: "An Iron Man-inspired parallax website design featuring smooth scrolling effects and a cinematic, layered visual experience.",
-    description: "This Iron Man-themed website is a front-end design project that showcases a parallax scrolling effect to create a dynamic and immersive user experience. Inspired by the Marvel universe, the page highlights Iron Man’s iconic visuals through layered motion and depth, making the design feel interactive and cinematic. The project focuses on modern UI techniques such as parallax animation, responsive layout, and smooth scrolling to enhance visual storytelling. It reflects my skills in creating engaging and visually impactful web designs using HTML, CSS, and basic JavaScript effects.",
-    tags: [ "Html", "Css", "JavaScript"],
-    siteUrl: "projects/webdev/ironman/index.html",
+    // id: "proj6",
+    // category: "web-dev",
+    // image: "assets/img/project-img/ironman1.jpg",
+    // images: [
+    //   "assets/img/project-img/ironman1.jpg",
+    // ],
+    // title: "Iron Man Parallax",
+    // short: "An Iron Man-inspired parallax website design featuring smooth scrolling effects and a cinematic, layered visual experience.",
+    // description: "This Iron Man-themed website is a front-end design project that showcases a parallax scrolling effect to create a dynamic and immersive user experience. Inspired by the Marvel universe, the page highlights Iron Man’s iconic visuals through layered motion and depth, making the design feel interactive and cinematic. The project focuses on modern UI techniques such as parallax animation, responsive layout, and smooth scrolling to enhance visual storytelling. It reflects my skills in creating engaging and visually impactful web designs using HTML, CSS, and basic JavaScript effects.",
+    // tags: [ "Html", "Css", "JavaScript"],
+    // siteUrl: "projects/webdev/ironman/index.html",
   },
 
 
