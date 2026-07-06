@@ -190,7 +190,7 @@ const projectsData = [
     category: "ui-design",
     image: "assets/img/project-img/cropwise1.png",
     images: [
-      "assets/img/cropwise1.png",
+      "assets/img/project-img/cropwise1.png",
     ],
     title: "CropWise",
     short: "CropWise is a hackathon-winning UI/UX design for smart agriculture, where I served as the main UI/UX designer, earning 2nd Place and Best Business Model at PUP Sto. Tomas.",
@@ -912,3 +912,271 @@ renderGraphics();
     }
   }, interval);
 })();
+
+
+//  AWARDS & CERTIFICATIONS DATA
+
+const certificationsData = [
+  {
+    id: "cert1",
+    icon: "bi-patch-check-fill",
+    title: "Salesforce Internship Program 2025",
+    issuer: "SmartBridge Philippines / Salesforce",
+    date: "Sept 2025 - Dec 2025",
+    image: "assets/img/cert.img/salesforce.png",
+    description: "Successfully completed the Salesforce Internship Program, gaining hands-on experience with the Salesforce platform, CRM fundamentals, Apex programming, Lightning Web Components (LWC), automation, and real-world business application development.",
+  },
+
+  {
+    id: "cert2",
+    icon: "bi-patch-check-fill",
+    title: "InsightQ Internship",
+    issuer: "InsightQ Consulting Group Inc.",
+    date: "Feb 2026 - May 2026",
+    image: "assets/img/cert.img/insightq.png",
+    images: [
+      "assets/img/cert.img/insightq.png",
+    ],
+    description: "Completed a Software Engineer internship focused on AI integration and Odoo development, building custom enterprise applications using XML, HTML, CSS, and JavaScript while enhancing business workflows through tailored software solutions.",
+  },
+
+  {
+    id: "cert3",
+    icon: "bi-patch-check-fill",
+    title: "DevCon 2024",
+    issuer: "Tech Nexus",
+    date: "2024",
+    image: "assets/img/cert.img/DEVCON.png",
+    description: "Participated in DEVCON 2024, gaining insights into the latest trends in software development, emerging technologies, AI, web development, and industry best practices through expert-led technical sessions and networking opportunities.",
+  },
+
+  {
+    id: "cert4",
+    icon: "bi-patch-check-fill",
+    title: "Hackathon 2026",
+    issuer: "PUP STO. TOMAS",
+    date: "2026",
+    image: "assets/img/cert.img/Hackathon.png",
+    description: "Participated in the PUP Sto. Tomas Hackathon 2026, collaborating with a team to develop an innovative software solution while demonstrating problem-solving, coding, and teamwork skills."
+  },
+  
+];
+
+const awardsData = [
+  {
+    id: "award1",
+    icon: "bi-trophy-fill",
+    title: "President's & Dean's Lister",
+    issuer: "Polytechnic University of the Philippines Sto. Tomas Campus",
+    date: "2022-Present",
+    image: "assets/img/award-img/lister1.jpg",
+    images: [
+      "assets/img/award-img/lister1.jpg",
+      "assets/img/award-img/lister2.jpg",
+      "assets/img/award-img/lister3.jpg",
+      "assets/img/award-img/lister4.jpg",
+      "assets/img/award-img/lister5.jpg",
+
+    ],
+    description: "Recognized as a consistent President's and Dean's Lister for maintaining outstanding academic performance, demonstrating dedication, discipline, and excellence throughout the academic year."
+  },
+  
+  {
+    id: "award2",
+    icon: "bi-trophy-fill",
+    title: "2nd Place & Best Business Model",
+    issuer: "PUP Sto. Tomas Hackathon",
+    date: "2026",
+    image: "assets/img/award-img/cropwise-award.jpg",
+    images: [
+      "assets/img/award-img/cropwise-award.jpg",
+      "assets/img/award-img/cropwise-award2.jpg",
+      "assets/img/award-img/cropwise-award3.jpg",
+
+    ],
+    description: "Received 2nd Place and the Best Business Model Award at the PUP Sto. Tomas Hackathon 2026 for developing CropWise, an innovative solution recognized for its technical execution, creativity, and strong business viability."
+  },
+
+  {
+    id: "award3",
+    icon: "bi-trophy-fill",
+    title: "Senior High School Academic Honors",
+    issuer: "DMMC Institute of Health Sciences",
+    date: "2022",
+    image: "assets/img/award-img/award3.jpg",
+    description: "Graduated with Honors from Senior High School in recognition of consistent academic excellence, dedication, and outstanding performance throughout the academic program."
+  },
+];
+
+let activeAwardsType = "certifications";
+
+function renderAwards(type) {
+  const track = document.getElementById("awardsTrack");
+  const empty = document.getElementById("awardsEmpty");
+  if (!track) return;
+
+  const data = type === "certifications" ? certificationsData : awardsData;
+
+  if (!data.length) {
+    track.innerHTML = "";
+    empty.style.display = "flex";
+    return;
+  }
+
+  empty.style.display = "none";
+  track.innerHTML = data.map((a) => buildAwardCard(a, type)).join("");
+
+  data.forEach((a) => {
+    const card = document.getElementById("acard-" + a.id);
+    if (card) card.addEventListener("click", () => openAwardModal(a, type));
+  });
+}
+
+
+  function buildAwardCard(a, type) {
+    const img = a.image
+      ? `<div class="award-img-wrap"><img src="${a.image}" alt="${a.title}" class="award-img"></div>`
+      : `<div class="award-icon"><i class="bi ${a.icon}"></i></div>`;
+  
+    return `
+      <div class="award-card" id="acard-${a.id}" data-type="${type}">
+        ${img}
+        <h4 class="award-title">${a.title}</h4>
+        <p class="award-issuer">${a.issuer}</p>
+        <span class="award-date">${a.date}</span>
+      </div>`;
+  }
+
+
+  function openAwardModal(a, type) {
+    document.getElementById("awardModalTitle").textContent = a.title;
+    document.getElementById("awardModalIssuer").textContent = a.issuer;
+    document.getElementById("awardModalDate").textContent = a.date;
+    document.getElementById("awardModalDesc").textContent = a.description;
+  
+    const iconEl = document.getElementById("awardModalIcon");
+    const isAward = type === "awards";
+    iconEl.innerHTML = `<i class="bi ${a.icon}"></i>`;
+    iconEl.style.color = isAward ? "#FACC15" : "#38BDF8";
+    iconEl.style.background = isAward ? "rgba(250,204,21,0.12)" : "rgba(56,189,248,0.12)";
+    iconEl.style.borderColor = isAward ? "rgba(250,204,21,0.3)" : "rgba(56,189,248,0.25)";
+  
+    buildAwardGallery(a);
+  
+    document.getElementById("awardModalOverlay").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+  
+  function buildAwardGallery(a) {
+    const galleryWrap = document.getElementById("awardModalGallery");
+    const images = (a.images && a.images.length) ? a.images : (a.image ? [a.image] : []);
+  
+    if (!images.length) {
+      galleryWrap.innerHTML = "";
+      galleryWrap.style.display = "none";
+      return;
+    }
+    galleryWrap.style.display = "block";
+  
+    const showNav = images.length > 1;
+    const imgsHtml = images.map((src, i) =>
+      `<img src="${src}" alt="${a.title} image ${i + 1}" class="gallery-img${i === 0 ? ' active' : ''}" data-index="${i}">`
+    ).join("");
+    const dotsHtml = images.map((_, i) =>
+      `<button class="gallery-dot${i === 0 ? ' active' : ''}" data-index="${i}"></button>`
+    ).join("");
+  
+    galleryWrap.innerHTML = `
+      <div class="gallery-track">${imgsHtml}</div>
+      ${showNav ? `
+        <button class="gallery-arrow gallery-prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="gallery-arrow gallery-next"><i class="bi bi-chevron-right"></i></button>
+        <div class="gallery-dots">${dotsHtml}</div>
+      ` : ''}
+      ${images.length > 1 ? `<div class="gallery-counter" id="awardGalleryCounter">1 / ${images.length}</div>` : ''}
+    `;
+  
+    let currentIndex = 0;
+  
+    function goToSlide(index) {
+      const imgs = galleryWrap.querySelectorAll(".gallery-img");
+      const dots = galleryWrap.querySelectorAll(".gallery-dot");
+      const counter = document.getElementById("awardGalleryCounter");
+      imgs.forEach((img, i) => img.classList.toggle("active", i === index));
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+      if (counter) counter.textContent = `${index + 1} / ${images.length}`;
+      currentIndex = index;
+    }
+  
+    const prevBtn = galleryWrap.querySelector(".gallery-prev");
+    const nextBtn = galleryWrap.querySelector(".gallery-next");
+  
+    if (prevBtn) {
+      prevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        goToSlide((currentIndex - 1 + images.length) % images.length);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        goToSlide((currentIndex + 1) % images.length);
+      });
+    }
+    galleryWrap.querySelectorAll(".gallery-dot").forEach((dot) => {
+      dot.addEventListener("click", (e) => {
+        e.stopPropagation();
+        goToSlide(parseInt(dot.dataset.index));
+      });
+    });
+  }
+
+//  ABOUT CARD FLIP TOGGLE + AUTO HEIGHT SYNC
+
+const aboutFlipCard = document.getElementById("aboutFlipCard");
+const btnShowAwards = document.getElementById("btnShowAwards");
+const btnHideAwards = document.getElementById("btnHideAwards");
+
+if (btnShowAwards) {
+  btnShowAwards.addEventListener("click", () => {
+    aboutFlipCard.classList.add("flipped");
+  });
+}
+if (btnHideAwards) {
+  btnHideAwards.addEventListener("click", () => {
+    aboutFlipCard.classList.remove("flipped");
+  });
+}
+
+function closeAwardModal() {
+  document.getElementById("awardModalOverlay").classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+const awardModalOverlay = document.getElementById("awardModalOverlay");
+if (awardModalOverlay) {
+  document.getElementById("awardModalClose").addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeAwardModal();
+  });
+  awardModalOverlay.addEventListener("click", closeAwardModal);
+  awardModalOverlay.querySelector(".project-modal").addEventListener("click", (e) => e.stopPropagation());
+}
+
+const awardsTabsEl = document.getElementById("awardsTabs");
+if (awardsTabsEl) {
+  awardsTabsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".awards-tab");
+    if (!btn) return;
+    document.querySelectorAll(".awards-tab").forEach((t) => t.classList.remove("active"));
+    btn.classList.add("active");
+    activeAwardsType = btn.dataset.type;
+    renderAwards(activeAwardsType);
+  });
+}
+
+renderAwards(activeAwardsType);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeAwardModal();
+});

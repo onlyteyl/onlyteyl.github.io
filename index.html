@@ -94,7 +94,7 @@
 
     <!-- LEFT -->
     <div class="col-12 col-lg-5">
-      <div class="about-img-card rounded-5 h-100">
+      <div class="about-img-card rounded-5 ">
         <div class="dot-grid"></div>
         <div class="about-img-wrapper">
           <img src="assets/img/about-me.jpg" alt="Allen" class="about-img">
@@ -103,23 +103,32 @@
     </div>
 
     <!-- RIGHT -->
-    <div class="col-12 col-lg-7">
-      <div class="about-info-card rounded-5 h-100">
+<div class="col-12 col-lg-7">
+  <div class="about-flip-card" id="aboutFlipCard">
+    <div class="about-flip-inner">
+
+      <!-- FRONT FACE (your existing About content) -->
+      <div class="about-info-card about-face-front rounded-5">
         <div class="dot-grid"></div>
+
         <div class="position-relative z-1">
-          <div class="status-badge mb-3">
-            About Me
+          <div class="about-front-header mb-3">
+            <div class="status-badge mb-0">About Me</div>
+            <button class="btn-awards-toggle" id="btnShowAwards">
+              <i class="bi bi-award-fill"></i>
+              <span>Awards & Certs</span>
+            </button>
           </div>
-          
+
           <h2 class="about-title">
             I'm Allen,
             <span class="italic-line">a builder at heart.</span>
           </h2>
-          
+
           <p class="about-text">
-            I’m currently a graduating student at PUP Sto. Tomas. I specialize in front-end development and UI/UX design, focusing on creating interfaces that are both visually appealing and easy to use. Over the past 4 years, I’ve learned and developed a wide range of skills in web development, design, and problem-solving through academic and real-world projects. I’m now ready to work and open to professional opportunities where I can apply my knowledge, grow further, and turn ideas into functional web experiences.
+            I'm currently a graduating student at PUP Sto. Tomas. I specialize in front-end development and UI/UX design, focusing on creating interfaces that are both visually appealing and easy to use. Over the past 4 years, I've learned and developed a wide range of skills in web development, design, and problem-solving through academic and real-world projects. I'm now ready to work and open to professional opportunities where I can apply my knowledge, grow further, and turn ideas into functional web experiences.
           </p>
-          
+
           <p class="about-text">
             When I'm not coding, I explore new design trends, experiment with creative tools, and look for new problems to solve.
           </p>
@@ -147,7 +156,43 @@
           </a>
         </div>
       </div>
+
+      <!-- BACK FACE — AWARDS & CERTIFICATIONS -->
+      <div class="about-info-card about-face-back rounded-5">
+        <div class="dot-grid"></div>
+        <div class="position-relative z-1">
+
+          <div class="awards-back-header">
+            <div class="status-badge mb-0">Recognition</div>
+            <button class="btn-awards-back" id="btnHideAwards">
+              <i class="bi bi-arrow-left"></i> Back
+            </button>
+          </div>
+
+          <h2 class="about-title mb-2">
+            Awards &
+            <span class="services-italic">Certifications</span>
+          </h2>
+
+          <div class="awards-tabs" id="awardsTabs">
+            <button class="awards-tab active" data-type="certifications">Certifications</button>
+            <button class="awards-tab" data-type="awards">Awards</button>
+          </div>
+
+          <div class="awards-scroll-container">
+            <div class="awards-track" id="awardsTrack"></div>
+          </div>
+          <div class="awards-empty" id="awardsEmpty" style="display:none;">
+            <i class="bi bi-award"></i>
+            <p>Nothing here yet — check back soon!</p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+  </div>
+</div>
 
   </div>
 
@@ -198,7 +243,7 @@
 
         <!-- Category Tabs -->
         <div class="project-tabs" id="projectTabs">
-          <button class="project-tab active" data-category="web-dev">Website Projects</button>
+          <button class="project-tab active" data-category="web-dev">Front-End Projects</button>
           <button class="project-tab" data-category="full-stack">Full-Stack Projects</button>
           <button class="project-tab" data-category="ui-design">UI/UX Design</button>
         </div>
@@ -608,6 +653,21 @@
 
 
 <div id="projectModals"></div>
+
+<!-- AWARD / CERTIFICATION MODAL -->
+<div class="project-modal-overlay" id="awardModalOverlay">
+  <div class="project-modal award-modal rounded-5">
+    <button class="modal-close" id="awardModalClose"><i class="bi bi-x-lg"></i></button>
+    <div class="modal-gallery" id="awardModalGallery"></div>
+    <div class="modal-body-content">
+      <div class="award-modal-icon" id="awardModalIcon"><i class="bi bi-award-fill"></i></div>
+      <h3 class="project-title mb-1" id="awardModalTitle"></h3>
+      <p class="award-modal-issuer" id="awardModalIssuer"></p>
+      <span class="award-date" id="awardModalDate"></span>
+      <p class="project-desc mt-3" id="awardModalDesc"></p>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
