@@ -914,7 +914,7 @@ renderGraphics();
 })();
 
 
-//  AWARDS & CERTIFICATIONS DATA
+//  AWARDS & CERTIFICATIONS 
 
 const certificationsData = [
   {
@@ -1130,9 +1130,6 @@ function renderAwards(type) {
       });
     });
   }
-
-//  ABOUT CARD FLIP TOGGLE + AUTO HEIGHT SYNC
-
 const aboutFlipCard = document.getElementById("aboutFlipCard");
 const btnShowAwards = document.getElementById("btnShowAwards");
 const btnHideAwards = document.getElementById("btnHideAwards");
