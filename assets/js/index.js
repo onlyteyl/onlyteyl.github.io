@@ -97,7 +97,7 @@ const projectsData = [
     short: "Main contributor for ServeIt, responsible for UI/UX design and full-stack development, ensuring a clean, functional, and user-friendly system.",
     description: "ServeIt is a web-based system where I contributed as one of the main developers, focusing on both UI/UX design and full-stack development. I was responsible for designing a clean, user-friendly interface that enhances user experience and ensures smooth navigation across the platform. On the development side, I helped build and implement both frontend and backend functionalities to support the system’s core features and performance. This project highlights my ability to collaborate in a team while applying my skills in designing and developing functional, responsive, and efficient web applications.",
     tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap"],
-    siteUrl: "#",
+    siteUrl: "https://serveitph.github.io/",
   },
 
   {
@@ -111,7 +111,7 @@ const projectsData = [
     short: "A simple web project where I contributed as a main UI/UX designer and full-stack developer, focused on creating a clean and functional user experience.",
     description: "UpNext is a simple web project where I contributed as one of the main UI/UX designers and full-stack developers. My role focused on creating a clean and intuitive user interface while also implementing both frontend and backend functionalities to support the system’s core features. The project emphasizes simplicity, usability, and smooth user experience, ensuring that users can easily navigate and interact with the platform. This project reflects my ability to handle both design and development tasks in a practical and efficient way.",
     tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap"],
-    siteUrl: "#",
+    siteUrl: "",
   },
 
   {
@@ -125,7 +125,7 @@ const projectsData = [
     short: "A QR-based café ordering system where I contributed to UI/UX design alongside Christian Coronado and worked as a full-stack developer.",
     description: "Saisyd Café is a QR code-based digital menu and ordering system where I contributed as one of the UI/UX designers and full-stack developers. I worked closely with Christian Coronado, one of the main UI/UX designers of the project, to design a clean, modern, and user-friendly interface that enhances the customer ordering experience. In addition to design work, I also contributed to the development of both frontend and backend functionalities, helping implement key system features. This project highlights my ability to collaborate effectively while balancing design and full-stack development responsibilities in a real-world system.",
     tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap", "Node.js",],
-    siteUrl: "#",
+    siteUrl: "https://glowboss.github.io/SAIYSD/",
   },
 
   {
@@ -167,7 +167,7 @@ const projectsData = [
     short: "FlowPro is a custom Odoo app I built to improve workflow and task management through structured processes, automation, and a user-friendly interface.",
     description: "FlowPro is a custom application I built inside the Odoo ERP platform as part of a system customization and development project. It is designed to improve workflow and task management by providing a structured, efficient, and user-friendly process within the Odoo environment. The app integrates with Odoo’s core system while extending its functionality through tailored features and automation. This project demonstrates my ability to develop custom modules in Odoo and build practical business solutions that enhance productivity and streamline operations.",
     tags: ["Claude API", "JavaScript", "HTML", "XML", "CSS", "SCSS", "Bootstrap", "Odoo" ],
-    siteUrl: "#",
+    siteUrl: "",
   },
 
   {
@@ -181,7 +181,7 @@ const projectsData = [
     short: "BRDPro is a web system for creating and managing Business Requirement Documents, designed to improve clarity, organization, and communication in project planning.",
     description: "BRDPro is a web-based project designed to streamline the creation and management of Business Requirement Documents (BRD). It provides a structured and user-friendly interface where users can organize project requirements, document business needs, and maintain clear communication between stakeholders and developers. The system focuses on improving clarity, efficiency, and accuracy in requirement gathering through a clean and intuitive workflow. This project demonstrates my ability to design and develop practical business tools that support documentation and system planning processes.",
     tags: ["Claude API", "JavaScript", "HTML", "XML", "CSS", "SCSS", "Bootstrap", "Odoo" ],
-    siteUrl: "#",
+    siteUrl: "",
   },
 
 
@@ -196,7 +196,7 @@ const projectsData = [
     short: "CropWise is a hackathon-winning UI/UX design for smart agriculture, where I served as the main UI/UX designer, earning 2nd Place and Best Business Model at PUP Sto. Tomas.",
     description: "CropWise is a UI/UX design project developed for a hackathon held at PUP Sto. Tomas, where our team focused on creating an innovative agricultural technology solution. The design emphasizes smart farming, data-driven monitoring, and user-friendly dashboards to help farmers and stakeholders manage crops more efficiently. Our project was awarded 2nd Place and also recognized as the Best Business Model, highlighting its strong concept and practical value. I contributed to the UI/UX design alongside my team members: Mark Joseph Dela Torre, Janna Macatangay, Jermaine Reinzarez, John Stephen Galarrita, and Althea Alberto. This project reflects my ability to design impactful, real-world solutions under time constraints while collaborating effectively in a team environment.",
     tags: ["Figma"],
-    siteUrl: "#",
+    siteUrl: "",
   },
 
   {
