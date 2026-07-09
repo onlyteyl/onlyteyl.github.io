@@ -379,10 +379,13 @@ function renderModals(projects) {
               <h3 class="project-title mb-2">${p.title}</h3>
               <p class="project-desc">${p.description}</p>
               <div class="project-tags mt-3">${tagsHtml}</div>
-              <a href="${p.siteUrl}" class="btn-visit mt-4 d-inline-flex" target="_blank">
-                <i class="bi bi-box-arrow-up-right"></i> Visit Website
-              </a>
-            </div>
+              ${p.siteUrl && p.siteUrl !== '#'
+                ? `<a href="${p.siteUrl}" class="btn-visit mt-4 d-inline-flex" target="_blank">
+                     <i class="bi bi-box-arrow-up-right"></i> Visit Website
+                   </a>`
+                : ''
+              }
+              </div>
           </div>
         </div>`;
     })
