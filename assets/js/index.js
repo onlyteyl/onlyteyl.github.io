@@ -1,5 +1,6 @@
-
 const projectsData = [
+
+  // WEB-DEV PROJECTS
   {
     // id: "proj1",
     // category: "web-dev",
@@ -15,9 +16,11 @@ const projectsData = [
     // tags: ["Html", "Css", "Bootstrap"],
     // siteUrl: "projects/webdev/iphone12Site/iphone.html",
   },
+
   {
     id: "proj2",
     category: "web-dev",
+    number: 1,
     image: "assets/img/project-img/tokyo1.png",
     images: [
       "assets/img/project-img/tokyo1.png",
@@ -30,22 +33,24 @@ const projectsData = [
   },
 
   {
-    id: "proj3",
+    id: "proj10",
     category: "web-dev",
-    image: "assets/img/project-img/stepzone1.png",
+    number: 2,
+    image: "assets/img/project-img/glam1.png",
     images: [
-      "assets/img/project-img/stepzone1.png",
+      "assets/img/project-img/glam1.png",
     ],
-    title: "StepZone",
-    short: "A modern fashion e-commerce website offering trendy shoes and jackets, designed to deliver a seamless and stylish shopping experience.",
-    description: "StepZone is an e-commerce website designed for fashion enthusiasts looking for stylish and high-quality shoes and jackets. The platform showcases a curated collection of trendy footwear and outerwear that cater to different styles, occasions, and preferences. Built with a focus on user experience, it provides an organized and visually appealing shopping experience where customers can easily browse products and explore the latest fashion trends. This project demonstrates my ability to create engaging retail websites that combine functionality with modern design.",
-    tags: ["Bootstrap", "Html", "Css", "JavaScript"],
-    siteUrl: "projects/webdev/stepzone/index.html",
+    title: "Glammoura",
+    short: "A self UI/UX design project for a beauty e-commerce concept featuring makeup and skincare products with a clean, elegant, and modern interface.",
+    description: "Glammoura is a self-initiated UI design project focused on a modern e-commerce concept for makeup and skincare products, including well-known beauty and face care items. The design emphasizes elegance, simplicity, and a luxurious aesthetic to match the beauty industry, with a clean layout that highlights products effectively and enhances user browsing experience. This project showcases my UI/UX design skills in creating visually appealing interfaces, thoughtful product presentation, and user-centered navigation flow. It reflects my creativity in building brand-focused digital storefront concepts for the beauty and skincare market.",
+    tags: ["JavaScript", "CSS3", "HTML5", "Figma",  "Bootstrap",],
+    siteUrl: "projects/webdev/glamoure/index.html",
   },
 
   {
     id: "proj4",
     category: "web-dev",
+    number: 3,
     image: "assets/img/project-img/SHOP1.png",
     images: [
       "assets/img/project-img/SHOP1.png",
@@ -58,8 +63,24 @@ const projectsData = [
   },
 
   {
+    id: "proj3",
+    category: "web-dev",
+    number: 4,
+    image: "assets/img/project-img/stepzone1.png",
+    images: [
+      "assets/img/project-img/stepzone1.png",
+    ],
+    title: "StepZone",
+    short: "A modern fashion e-commerce website offering trendy shoes and jackets, designed to deliver a seamless and stylish shopping experience.",
+    description: "StepZone is an e-commerce website designed for fashion enthusiasts looking for stylish and high-quality shoes and jackets. The platform showcases a curated collection of trendy footwear and outerwear that cater to different styles, occasions, and preferences. Built with a focus on user experience, it provides an organized and visually appealing shopping experience where customers can easily browse products and explore the latest fashion trends. This project demonstrates my ability to create engaging retail websites that combine functionality with modern design.",
+    tags: ["Bootstrap", "Html", "Css", "JavaScript"],
+    siteUrl: "projects/webdev/stepzone/index.html",
+  },
+
+  {
     id: "proj5",
     category: "web-dev",
+    number: 5,
     image: "assets/img/project-img/tekken1.jpg",
     images: [
       "assets/img/project-img/tekken1.jpg",
@@ -85,123 +106,10 @@ const projectsData = [
     // siteUrl: "projects/webdev/ironman/index.html",
   },
 
-
-  {
-    id: "proj7",
-    category: "full-stack",
-    image: "assets/img/project-img/Serveit1.png",
-    images: [
-      "assets/img/project-img/Serveit1.png",
-    ],
-    title: "ServeIT",
-    short: "Main contributor for ServeIt, responsible for UI/UX design and full-stack development, ensuring a clean, functional, and user-friendly system.",
-    description: "ServeIt is a web-based system where I contributed as one of the main developers, focusing on both UI/UX design and full-stack development. I was responsible for designing a clean, user-friendly interface that enhances user experience and ensures smooth navigation across the platform. On the development side, I helped build and implement both frontend and backend functionalities to support the system’s core features and performance. This project highlights my ability to collaborate in a team while applying my skills in designing and developing functional, responsive, and efficient web applications.",
-    tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap"],
-    siteUrl: "https://serveitph.github.io/",
-  },
-
-  {
-    id: "proj8",
-    category: "full-stack",
-    image: "assets/img/project-img/upnext1.png",
-    images: [
-      "assets/img/project-img/upnext1.png","assets/img/project-img/upnext2.png","assets/img/project-img/upnext3.png",
-    ],
-    title: "UpNext",
-    short: "A simple web project where I contributed as a main UI/UX designer and full-stack developer, focused on creating a clean and functional user experience.",
-    description: "UpNext is a simple web project where I contributed as one of the main UI/UX designers and full-stack developers. My role focused on creating a clean and intuitive user interface while also implementing both frontend and backend functionalities to support the system’s core features. The project emphasizes simplicity, usability, and smooth user experience, ensuring that users can easily navigate and interact with the platform. This project reflects my ability to handle both design and development tasks in a practical and efficient way.",
-    tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap"],
-    siteUrl: "",
-  },
-
-  {
-    id: "proj9",
-    category: "full-stack",
-    image: "assets/img/project-img/saisyd1.png",
-    images: [
-      "assets/img/project-img/saisyd1.png","assets/img/project-img/saisyd2.png","assets/img/project-img/saisyd3.png",
-    ],
-    title: "SaisydCafe",
-    short: "A QR-based café ordering system where I contributed to UI/UX design alongside Christian Coronado and worked as a full-stack developer.",
-    description: "Saisyd Café is a QR code-based digital menu and ordering system where I contributed as one of the UI/UX designers and full-stack developers. I worked closely with Christian Coronado, one of the main UI/UX designers of the project, to design a clean, modern, and user-friendly interface that enhances the customer ordering experience. In addition to design work, I also contributed to the development of both frontend and backend functionalities, helping implement key system features. This project highlights my ability to collaborate effectively while balancing design and full-stack development responsibilities in a real-world system.",
-    tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap", "Node.js",],
-    siteUrl: "https://glowboss.github.io/SAIYSD/",
-  },
-
-  {
-    id: "proj10",
-    category: "web-dev",
-    image: "assets/img/project-img/glam1.png",
-    images: [
-      "assets/img/project-img/glam1.png",
-    ],
-    title: "Glammoura",
-    short: "A self UI/UX design project for a beauty e-commerce concept featuring makeup and skincare products with a clean, elegant, and modern interface.",
-    description: "Glammoura is a self-initiated UI design project focused on a modern e-commerce concept for makeup and skincare products, including well-known beauty and face care items. The design emphasizes elegance, simplicity, and a luxurious aesthetic to match the beauty industry, with a clean layout that highlights products effectively and enhances user browsing experience. This project showcases my UI/UX design skills in creating visually appealing interfaces, thoughtful product presentation, and user-centered navigation flow. It reflects my creativity in building brand-focused digital storefront concepts for the beauty and skincare market.",
-    tags: ["JavaScript", "CSS3", "HTML5", "Figma",  "Bootstrap",],
-    siteUrl: "projects/webdev/glamoure/index.html",
-  },
-
-  {
-    id: "proj11",
-    category: "full-stack",
-    image: "assets/img/project-img/hope1.jpg",
-    images: [
-      "assets/img/project-img/hope1.jpg",
-    ],
-    title: "Hope Website",
-    short: "A minimalist website design focused on positivity and inspiration, using clean visuals and a calming layout to create an uplifting user experience.",
-    description: "Hope is a simple web design project that focuses on delivering a clean, calming, and uplifting user experience. The website is built with a minimalist layout and soft visual elements that aim to convey positivity and inspiration to users. It highlights how thoughtful design can influence mood and engagement through color, spacing, and typography choices. This project reflects my ability to create meaningful and user-centered designs that go beyond aesthetics and focus on emotional impact.",
-    tags: ["Wix Studio", "UI/UX Design"],
-    siteUrl: "https://www.hopeconnections.com.au/",
-  },
-
-  {
-    id: "proj12",
-    category: "full-stack",
-    image: "assets/img/project-img/flowpro.png",
-    images: [
-      "assets/img/project-img/flowpro1.png", "assets/img/project-img/flowpro2.png", "assets/img/project-img/flowpro3.png",
-    ],
-    title: "FLOWPRO",
-    short: "FlowPro is a custom Odoo app I built to improve workflow and task management through structured processes, automation, and a user-friendly interface.",
-    description: "FlowPro is a custom application I built inside the Odoo ERP platform as part of a system customization and development project. It is designed to improve workflow and task management by providing a structured, efficient, and user-friendly process within the Odoo environment. The app integrates with Odoo’s core system while extending its functionality through tailored features and automation. This project demonstrates my ability to develop custom modules in Odoo and build practical business solutions that enhance productivity and streamline operations.",
-    tags: ["Claude API", "JavaScript", "HTML", "XML", "CSS", "SCSS", "Bootstrap", "Odoo" ],
-    siteUrl: "",
-  },
-
-  {
-    id: "proj13",
-    category: "full-stack",
-    image: "assets/img/project-img/brdpro5.png",
-    images: [
-      "assets/img/project-img/brdpro.png", "assets/img/project-img/brdpro4.png", "assets/img/project-img/brdpro2.png",
-    ],
-    title: "BRDPRO",
-    short: "BRDPro is a web system for creating and managing Business Requirement Documents, designed to improve clarity, organization, and communication in project planning.",
-    description: "BRDPro is a web-based project designed to streamline the creation and management of Business Requirement Documents (BRD). It provides a structured and user-friendly interface where users can organize project requirements, document business needs, and maintain clear communication between stakeholders and developers. The system focuses on improving clarity, efficiency, and accuracy in requirement gathering through a clean and intuitive workflow. This project demonstrates my ability to design and develop practical business tools that support documentation and system planning processes.",
-    tags: ["Claude API", "JavaScript", "HTML", "XML", "CSS", "SCSS", "Bootstrap", "Odoo" ],
-    siteUrl: "",
-  },
-
-
-  {
-    id: "proj14",
-    category: "ui-design",
-    image: "assets/img/project-img/cropwise1.png",
-    images: [
-      "assets/img/project-img/cropwise1.png",
-    ],
-    title: "CropWise",
-    short: "CropWise is a hackathon-winning UI/UX design for smart agriculture, where I served as the main UI/UX designer, earning 2nd Place and Best Business Model at PUP Sto. Tomas.",
-    description: "CropWise is a UI/UX design project developed for a hackathon held at PUP Sto. Tomas, where our team focused on creating an innovative agricultural technology solution. The design emphasizes smart farming, data-driven monitoring, and user-friendly dashboards to help farmers and stakeholders manage crops more efficiently. Our project was awarded 2nd Place and also recognized as the Best Business Model, highlighting its strong concept and practical value. I contributed to the UI/UX design alongside my team members: Mark Joseph Dela Torre, Janna Macatangay, Jermaine Reinzarez, John Stephen Galarrita, and Althea Alberto. This project reflects my ability to design impactful, real-world solutions under time constraints while collaborating effectively in a team environment.",
-    tags: ["Figma"],
-    siteUrl: "",
-  },
-
   {
     id: "proj15",
     category: "web-dev",
+    number: 6,
     image: "assets/img/project-img/onlyteyl1.png",
     images: [
       "assets/img/project-img/onlyteyl1.png",
@@ -216,16 +124,147 @@ const projectsData = [
   {
     id: "proj16",
     category: "web-dev",
+    number: 7,
     image: "assets/img/project-img/img9.jpg",
     images: [
       "assets/img/project-img/img9.jpg",
     ],
     title: "LoveOS",
-    short: "oveOS is a love-themed personal website dedicated to my girlfriend, featuring messages, memories, and small interactive moments built with love.",
+    short: "LoveOS is a love-themed personal website dedicated to my girlfriend, featuring messages, memories, and small interactive moments built with love.",
     description: "LoveOS is a personal love-themed web experience created as a digital space dedicated to my girlfriend. It is designed to showcase memories, messages, and small interactive features that represent our journey together. Built with love and creativity, LoveOS serves as a unique online space where feelings, appreciation, and special moments are turned into a simple but meaningful experience through design and code.",
     tags: ["Figma", "JavaScript", "HTML", "CSS"],
     siteUrl: "projects/SELF PROJECT/MacOS-UI/index.html",
   },
+
+  {
+    id: "proj17",
+    category: "web-dev",
+    number: 7,
+    status: "in-progress",
+    image: "assets/img/project-img/comsoc.png",
+    images: [
+      "assets/img/project-img/comsoc.png",
+    ],
+    title: "Sulong Laban Website",
+    short: "A responsive website for Sulong Laban designed to showcase the organization's mission, programs, news, and community initiatives through a modern and user-friendly interface.",
+    description: "The Sulong Laban Website is a responsive web platform currently under development to strengthen the organization's digital presence. It is designed to provide visitors with easy access to information about Sulong Laban's mission, programs, events, news, and community initiatives. Built with a focus on clean UI/UX, accessibility, and responsive design, the website aims to deliver an engaging experience across desktop and mobile devices while serving as a centralized hub for organizational updates and resources.",
+    tags: ["Figma", "JavaScript (ES6)", "HTML5", "CSS3", "Bootstrap",],
+    siteUrl: "",
+  },
+
+
+  // FULL-STACK PROJECTS
+
+
+  {
+    id: "proj7",
+    category: "full-stack",
+    number: 1,
+    image: "assets/img/project-img/Serveit1.png",
+    images: [
+      "assets/img/project-img/Serveit1.png",
+    ],
+    title: "ServeIT",
+    short: "Main contributor for ServeIt, responsible for UI/UX design and full-stack development, ensuring a clean, functional, and user-friendly system.",
+    description: "ServeIt is a web-based system where I contributed as one of the main developers, focusing on both UI/UX design and full-stack development. I was responsible for designing a clean, user-friendly interface that enhances user experience and ensures smooth navigation across the platform. On the development side, I helped build and implement both frontend and backend functionalities to support the system’s core features and performance. This project highlights my ability to collaborate in a team while applying my skills in designing and developing functional, responsive, and efficient web applications.",
+    tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap"],
+    siteUrl: "https://serveitph.github.io/",
+  },
+
+  {
+    id: "proj8",
+    category: "full-stack",
+    number: 2,
+    image: "assets/img/project-img/upnext1.png",
+    images: [
+      "assets/img/project-img/upnext1.png","assets/img/project-img/upnext2.png","assets/img/project-img/upnext3.png",
+    ],
+    title: "UpNext",
+    short: "A simple web project where I contributed as a main UI/UX designer and full-stack developer, focused on creating a clean and functional user experience.",
+    description: "UpNext is a simple web project where I contributed as one of the main UI/UX designers and full-stack developers. My role focused on creating a clean and intuitive user interface while also implementing both frontend and backend functionalities to support the system’s core features. The project emphasizes simplicity, usability, and smooth user experience, ensuring that users can easily navigate and interact with the platform. This project reflects my ability to handle both design and development tasks in a practical and efficient way.",
+    tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap"],
+    siteUrl: "",
+  },
+
+  {
+    id: "proj9",
+    category: "full-stack",
+    number: 3,
+    image: "assets/img/project-img/saisyd1.png",
+    images: [
+      "assets/img/project-img/saisyd1.png","assets/img/project-img/saisyd2.png","assets/img/project-img/saisyd3.png",
+    ],
+    title: "SaisydCafe",
+    short: "A QR-based café ordering system where I contributed to UI/UX design alongside Christian Coronado and worked as a full-stack developer.",
+    description: "Saisyd Café is a QR code-based digital menu and ordering system where I contributed as one of the UI/UX designers and full-stack developers. I worked closely with Christian Coronado, one of the main UI/UX designers of the project, to design a clean, modern, and user-friendly interface that enhances the customer ordering experience. In addition to design work, I also contributed to the development of both frontend and backend functionalities, helping implement key system features. This project highlights my ability to collaborate effectively while balancing design and full-stack development responsibilities in a real-world system.",
+    tags: ["JavaScript", "CSS3", "HTML5", "Figma", "PHP", "MySQL", "Bootstrap", "Node.js",],
+    siteUrl: "https://glowboss.github.io/SAIYSD/",
+  },
+
+  {
+    id: "proj11",
+    category: "full-stack",
+    number: 4,
+    image: "assets/img/project-img/hope1.jpg",
+    images: [
+      "assets/img/project-img/hope1.jpg",
+    ],
+    title: "Hope Website",
+    short: "A minimalist website design focused on positivity and inspiration, using clean visuals and a calming layout to create an uplifting user experience.",
+    description: "Hope is a simple web design project that focuses on delivering a clean, calming, and uplifting user experience. The website is built with a minimalist layout and soft visual elements that aim to convey positivity and inspiration to users. It highlights how thoughtful design can influence mood and engagement through color, spacing, and typography choices. This project reflects my ability to create meaningful and user-centered designs that go beyond aesthetics and focus on emotional impact.",
+    tags: ["Wix Studio", "UI/UX Design"],
+    siteUrl: "https://www.hopeconnections.com.au/",
+  },
+
+  {
+    id: "proj12",
+    category: "full-stack",
+    number: 5,
+    image: "assets/img/project-img/flowpro.png",
+    images: [
+      "assets/img/project-img/flowpro1.png", "assets/img/project-img/flowpro2.png", "assets/img/project-img/flowpro3.png",
+    ],
+    title: "FLOWPRO",
+    short: "FlowPro is a custom Odoo app I built to improve workflow and task management through structured processes, automation, and a user-friendly interface.",
+    description: "FlowPro is a custom application I built inside the Odoo ERP platform as part of a system customization and development project. It is designed to improve workflow and task management by providing a structured, efficient, and user-friendly process within the Odoo environment. The app integrates with Odoo’s core system while extending its functionality through tailored features and automation. This project demonstrates my ability to develop custom modules in Odoo and build practical business solutions that enhance productivity and streamline operations.",
+    tags: ["Claude API", "JavaScript", "HTML", "XML", "CSS", "SCSS", "Bootstrap", "Odoo" ],
+    siteUrl: "",
+  },
+
+  {
+    id: "proj13",
+    category: "full-stack",
+    number: 6,
+    image: "assets/img/project-img/brdpro5.png",
+    images: [
+      "assets/img/project-img/brdpro.png", "assets/img/project-img/brdpro4.png", "assets/img/project-img/brdpro2.png",
+    ],
+    title: "BRDPRO",
+    short: "BRDPro is a web system for creating and managing Business Requirement Documents, designed to improve clarity, organization, and communication in project planning.",
+    description: "BRDPro is a web-based project designed to streamline the creation and management of Business Requirement Documents (BRD). It provides a structured and user-friendly interface where users can organize project requirements, document business needs, and maintain clear communication between stakeholders and developers. The system focuses on improving clarity, efficiency, and accuracy in requirement gathering through a clean and intuitive workflow. This project demonstrates my ability to design and develop practical business tools that support documentation and system planning processes.",
+    tags: ["Claude API", "JavaScript", "HTML", "XML", "CSS", "SCSS", "Bootstrap", "Odoo" ],
+    siteUrl: "",
+  },
+
+
+  // UI-DESIGN PROJECTS
+
+  {
+    id: "proj14",
+    category: "ui-design",
+    number: 1,
+
+    image: "assets/img/project-img/cropwise1.png",
+    images: [
+      "assets/img/project-img/cropwise1.png",
+    ],
+    title: "CropWise",
+    short: "CropWise is a hackathon-winning UI/UX design for smart agriculture, where I served as the main UI/UX designer, earning 2nd Place and Best Business Model at PUP Sto. Tomas.",
+    description: "CropWise is a UI/UX design project developed for a hackathon held at PUP Sto. Tomas, where our team focused on creating an innovative agricultural technology solution. The design emphasizes smart farming, data-driven monitoring, and user-friendly dashboards to help farmers and stakeholders manage crops more efficiently. Our project was awarded 2nd Place and also recognized as the Best Business Model, highlighting its strong concept and practical value. I contributed to the UI/UX design alongside my team members: Mark Joseph Dela Torre, Janna Macatangay, Jermaine Reinzarez, John Stephen Galarrita, and Althea Alberto. This project reflects my ability to design impactful, real-world solutions under time constraints while collaborating effectively in a team environment.",
+    tags: ["Figma"],
+    siteUrl: "",
+  },
+
 ];
 
 let activeCategory = "web-dev";
@@ -248,8 +287,19 @@ function renderProjects(category) {
   }
 
   empty.style.display = "none";
-  track.innerHTML = filtered.map((p, i) => buildCard(p, i + 1)).join("");
-  renderModals(filtered);
+
+
+// Status priority: "new" first, then "in-progress", then everyone else by number
+const statusRank = { "new": 0, "in-progress": 1 };
+const sorted = [...filtered].sort((a, b) => {
+  const aRank = statusRank[a.status] ?? 2;
+  const bRank = statusRank[b.status] ?? 2;
+  if (aRank !== bRank) return aRank - bRank;
+  return a.number - b.number;
+});
+
+track.innerHTML = sorted.map((p) => buildCard(p, p.number)).join("");
+renderModals(sorted);
 
 
   filtered.forEach((p) => {
@@ -295,6 +345,13 @@ function buildCard(p, num) {
   const numStr = String(num).padStart(2, "0");
   const tagsHtml = p.tags.map((t) => `<span class="tag">${t}</span>`).join("");
 
+  let statusBadge = "";
+  if (p.status === "new") {
+    statusBadge = `<div class="project-status-badge status-new">New</div>`;
+  } else if (p.status === "in-progress") {
+    statusBadge = `<div class="project-status-badge status-progress">In Progress</div>`;
+  }
+
   return `
     <div class="project-card" id="card-${p.id}">
       <div class="project-card-inner">
@@ -305,6 +362,7 @@ function buildCard(p, num) {
           <div class="project-img-wrapper">
             <img src="${p.image}" alt="${p.title}" class="project-img">
             <div class="project-number">${numStr}</div>
+            ${statusBadge}
           </div>
           <div class="project-front-info">
             <h3 class="project-title">${p.title}</h3>

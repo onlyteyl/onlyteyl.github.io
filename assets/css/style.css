@@ -1362,6 +1362,30 @@ body {
     margin-bottom: 24px;
 }
 
+.project-status-badge {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.status-new {
+    color: #0a1628;
+    background: #38BDF8;
+    box-shadow: 0 0 12px rgba(56,189,248,0.5);
+}
+
+.status-progress {
+    color: #0a1628;
+    background: #FACC15;
+    box-shadow: 0 0 12px rgba(250,204,21,0.5);
+}
+
 .modal-body-content .btn-visit {
     display: inline-flex;
     align-items: center;
