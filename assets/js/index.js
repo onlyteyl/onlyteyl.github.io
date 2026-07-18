@@ -257,7 +257,7 @@ const projectsData = [
     number: 6,
     image: "assets/img/project-img/brdpro5.png",
     images: [
-      "assets/img/project-img/brdpro.png", "assets/img/project-img/brdpro4.png", "assets/img/project-img/brdpro2.png",
+      "assets/img/project-img/brdpro.png", "assets/img/project-img/brdpro4.png", "assets/img/project-img/brdpro.png",
     ],
     title: "BRDPRO",
     short: "BRDPro is a web system for creating and managing Business Requirement Documents, designed to improve clarity, organization, and communication in project planning.",
