@@ -28,166 +28,128 @@
 <body>
 
      <!-- nav -->
- <nav class="navbar bg-body-tertiary">
+ <nav class="navbar">
     <div class="container d-flex justify-content-center">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/bb-logo.png" style="width: 171px;" alt="Bootstrap" width="30" height="24">
-        </a>
+        <div class="nav-pill">
+            <a class="navbar-brand m-0" href="index.html">
+                <img src="img/bb-logo.png" style="width: 150px;" alt="BlipBlop logo" width="30" height="24">
+            </a>
+        </div>
     </div>
 </nav>
     <div class="container mt-3">
         <!-- Top Row -->
-        <div class="row top-row">
-            <!-- Left Column -->
-            <div class="col-md-3 mb-2">
-                <div class="card purple-div rounded-5 animate__animated animate__fadeInLeft"
-                    style="animation-delay: 0.1s;">
-                    <div class="container-fluid pt-2">
-                        <div class="text-center">
-                            <img src="img/mascot.png" class="img-fluid custom-img" alt="Mascot">
-                        </div>
+        <div class="home-grid-top">
+            <!-- Blip card -->
+            <div class="card purple-div blip-card animate__animated animate__fadeInLeft"
+                style="animation-delay: 0.1s;">
+                <div class="pt-2 flex-grow-1 d-flex flex-column">
+                    <div class="text-center">
+                        <img src="img/mascot.png" class="img-fluid custom-img" alt="Mascot">
+                    </div>
 
-                        <div class="title text-center">
-                            HI! I AM <span style="color: #D2FC25">BLIP</span>
-                        </div>
-                        <div class="description">
-                            Hey there, I’m Blip the logical half of the twin duo! I live to debug life’s little
-                            glitches, visualize code flows in 3D, and bring crystal-clear clarity to any tricky
-                            algorithm.
-                        </div>
+                    <div class="title text-center">
+                        HI! I AM <span style="color: #D2FC25">BLIP</span>
+                    </div>
+                    <div class="description">
+                        Hey there, I’m Blip the logical half of the twin duo! I live to debug life’s little
+                        glitches, visualize code flows in 3D, and bring crystal-clear clarity to any tricky
+                        algorithm.
+                    </div>
 
-                    
-                        <a href="blip.html" class="d-flex justify-content-center"><button class="btn-custom">See
-                                more</button>
-                    </div></a>
+                    <a href="blip.html" class="d-flex justify-content-center mt-auto pt-3">
+                        <button class="btn-custom">See more</button>
+                    </a>
                 </div>
             </div>
 
-
-            <!-- Center Column -->
-            <div class="col-md-6 mb-2">
-                <div class="card cover-div  rounded-5 animate__animated animate__fadeInUp"
-                    style="animation-delay: 0.2s;">
-                    <div class="homebanner-title mt-3 ">
+            <!-- Center hero card -->
+            <div class="card cover-div cover-card animate__animated animate__fadeInUp"
+                style="animation-delay: 0.2s;">
+                <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                    <div class="homebanner-eyebrow">TWO MINDS · ONE TEYL</div>
+                    <div class="homebanner-title">
                         BLIP<SPAN style="color: #8960e9">BLOP</SPAN>
                     </div>
                     <div class="homebanner-subtitle" style=" font-weight: bold;">
                         SIDE OF TEYL
                     </div>
-                    <a href="story.html" class="d-flex justify-content-center"><button class="btn-custom text-white"
-                            style="background-color: #8357eb!important;">HOW IT
-                            STARTED?</button></a>
                 </div>
+                <a href="story.html" class="d-flex justify-content-center mt-auto pb-4">
+                    <button class="btn-custom text-white" style="background-color: #8357eb!important;">HOW IT
+                        STARTED?</button>
+                </a>
             </div>
 
-
-            <div class="col-md-3 mb-2">
-                <div class="card green-div rounded-5 animate__animated animate__fadeInLeft"
-                    style="animation-delay: 0.1s;">
-                    <div class="container-fluid pt-2">
-                        <div class="text-center">
-                            <img src="img/mascot2.png" class="img-fluid custom-img" alt="Mascot">
-                        </div>
-
-                        <div class="title text-center text-black">
-                            HI! I AM <span style="color: #7A4FE1">BLOP</span>
-                        </div>
-                        <div class="description text-black">
-                            Hi, I’m Blop the wild-imagination twin! I spark spontaneous UI magic, paint pixels with bold
-                            ideas, and turn every corner of the digital playground into playful prototypes.
-                        </div>
-
-                        <a href="blop.html" class="d-flex justify-content-center"><button class="btn-custom"
-                                style="background-color: #7A4FE1">See more</button></a>
+            <!-- Blop card -->
+            <div class="card green-div blop-card animate__animated animate__fadeInLeft"
+                style="animation-delay: 0.1s;">
+                <div class="pt-2 flex-grow-1 d-flex flex-column">
+                    <div class="text-center">
+                        <img src="img/mascot2.png" class="img-fluid custom-img" alt="Mascot">
                     </div>
+
+                    <div class="title text-center">
+                        HI! I AM <span style="color: #7A4FE1">BLOP</span>
+                    </div>
+                    <div class="description">
+                        Hi, I’m Blop the wild-imagination twin! I spark spontaneous UI magic, paint pixels with bold
+                        ideas, and turn every corner of the digital playground into playful prototypes.
+                    </div>
+
+                    <a href="blop.html" class="d-flex justify-content-center mt-auto pt-3">
+                        <button class="btn-custom" style="background-color: #7A4FE1">See more</button>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <!-- Bottom Row -->
-        <div class="row mt-3">
+        <!-- Bottom Row — bento grid -->
+        <div class="bento-grid">
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="row">
+            <div class="bento-item bento-quote green-div card animate__animated animate__fadeInLeft"
+                style="animation-delay: 0.1s;">
+                <div class="bento-tag" style="color:#D2FC25;">Quote of the day</div>
+                <p class="description text-white m-0">
+                    "First, solve the problem. Then, write the code."
+                </p>
+            </div>
 
-                    <div class="col-12 mb-2">
-                        <div class="card green-div p-3 rounded-5 card-half animate__animated animate__fadeInLeft"
-                            style="animation-delay: 0.1s;">
-                            <div class="text-center mt-5">
-                                <h5 class="text-center " style=" font-weight: bold; color: #7A4FE1;">Quote of the Day
-                                </h5>
-                                <p class="description text-center text-black">
-                                    “First, solve the problem. Then, write the code.”
-                                </p>
-                            </div>
-                        </div>
+            <div class="bento-item bento-fact purple-div card animate__animated animate__fadeInLeft"
+                style="animation-delay: 0.2s;">
+                <div class="bento-tag" style="color:#D2FC25;">Did you know?</div>
+                <p class="description m-0">
+                    JavaScript was created in just 10 days by Brendan Eich in 1995!
+                </p>
+            </div>
 
+            <div class="bento-item bento-blip-photo blip-bg card animate__animated animate__fadeInUp"
+                style="animation-delay: 0.3s;">
+            </div>
 
+            <div class="bento-item bento-blop-photo blop-bg card animate__animated animate__fadeInUp"
+                style="animation-delay: 0.4s;">
+            </div>
 
-                    </div>
-
-                    <div class="col-12">
-                        <div class="card purple-div p-3 rounded-5 card-half animate__animated animate__fadeInLeft"
-                            style="animation-delay: 0.2s;">
-                            <div class="text-center  mt-5">
-                                <h5 class="text-center" style=" font-weight: bold; color: #D2FC25;">Did You Know?
-                                </h5>
-                                <p class="description text-center">
-                                    JavaScript was created in just 10 days by Brendan Eich in 1995!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bento-item bento-music multo-div card animate__animated animate__fadeInRight"
+                style="animation-delay: 0.3s;">
+                <div class="text-center">
+                    <i class="fab fa-spotify fa-2x"></i>
+                    <h5 class="mt-2 mb-1">Current Fave Music</h5>
+                    <iframe
+                    src="https://open.spotify.com/embed/track/4kfXaAAZlfBrimPJYHlCEM?si=e4f1cce2d1ee4ab3&theme=0"
+                    width="100%" height="152" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media" scrolling="no" style="border-radius: 12px; overflow: hidden;">
+                </iframe>
                 </div>
             </div>
 
+            <a href="instagram.com" class="bento-item bento-instagram purple-div card animate__animated animate__fadeInRight"
+                style="animation-delay: 0.4s;">
+                <i class="fa-brands fa-instagram" style="color:#D2FC25; font-size: 48px;"></i>
+                <div style="font-size: 16px; margin-top: 6px;">@onlyteyl</div>
+            </a>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card blip-bg p-3 rounded-5 animate__animated animate__fadeInUp"
-                    style="animation-delay: 0.3s;">
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="card blop-bg p-4 rounded-5 animate__animated animate__fadeInUp"
-                    style="animation-delay: 0.4s;">
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                <div class="row">
-                    <div class="col-12 mb-2">
-                        <div class="card multo-div rounded-5 card-half animate__animated animate__fadeInRight"
-                            style="animation-delay: 0.3s;">
-                            <div class="text-center mt-3">
-                                <i class="fab fa-spotify fa-2x"></i>
-                                <h5 class="mt-2 mb-1" style="font-weight: bold;">Current Fave Music</h5>
-                                <iframe
-                                    src="https://open.spotify.com/embed/track/4kfXaAAZlfBrimPJYHlCEM?si=e4f1cce2d1ee4ab3"
-                                    width="100%" height="80" frameborder="0" allowtransparency="true"
-                                    allow="encrypted-media" class="mt-4">
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 mb-2">
-                        <a href="instagram.com">
-                            <div class="card purple-div p-5 rounded-5 card-half animate__animated animate__fadeInRight"
-                                style="animation-delay: 0.4s;">
-                                <div class="text-center" style="font-size: 60px; font-weight: bold;">
-                                    <i class="fa-brands fa-instagram" style="color:#D2FC25; font-size: 60px;"></i>
-                                    <div style="font-size: 20px;">
-                                        @onlyteyl
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 

@@ -150,6 +150,26 @@ const projectsData = [
     description: "The Sulong Laban Website is a responsive web platform currently under development to strengthen the organization's digital presence. It is designed to provide visitors with easy access to information about Sulong Laban's mission, programs, events, news, and community initiatives. Built with a focus on clean UI/UX, accessibility, and responsive design, the website aims to deliver an engaging experience across desktop and mobile devices while serving as a centralized hub for organizational updates and resources.",
     tags: ["Figma", "JavaScript (ES6)", "HTML5", "CSS3", "Bootstrap",],
     siteUrl: "",
+
+    
+  },
+
+  {
+    id: "proj18",
+    category: "web-dev",
+    number: 8,
+    status: "new",
+    image: "assets/img/project-img/blipblop.png",
+    images: [
+      "assets/img/project-img/blipblop.png",
+    ],
+    title: "BlipBlop",
+    short: "Where Brains Meet Creativity",
+    description:  "BlipBlop is where brains meet creativity! Blip handles the techy stuff while Blop brings the flair, combining innovation and creativity to build fun, functional, and fantastic digital experiences. From apps and designs to quirky ideas, BlipBlop makes sure everything works beautifully and looks awesome.",
+    tags: ["Figma", "JavaScript", "HTML5", "CSS3", "Bootstrap",],
+    siteUrl: "../projects/ADET/A03",
+
+    
   },
 
 
