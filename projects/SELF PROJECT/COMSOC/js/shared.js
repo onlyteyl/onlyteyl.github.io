@@ -46,10 +46,37 @@
           navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
         }));
       }
+
+
+      /* Scroll-spy for section-based nav links (index.html only) */
+  const spySections = document.querySelectorAll('main section[id], header[id], section[id]');
+  const spyLinks = document.querySelectorAll('.nav-links a[href*="#"], #mobileMenu a[href*="#"]');
+
+  if (spySections.length && spyLinks.length) {
+    const setActiveLink = (id) => {
+      spyLinks.forEach(link => {
+        const hash = link.getAttribute('href').split('#')[1];
+        link.classList.toggle('active', hash === id);
+      });
+    };
+
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveLink(entry.target.id);
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+
+    spySections.forEach(sec => spyObserver.observe(sec));
+  }
   
       /* reveal elements already na exist sa static markup */
       observeReveals();
     });
+
+
+    
   
     return { observeReveals };
   })();

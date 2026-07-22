@@ -1,107 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Computer Society STC </title>
-<meta name="description" content="Official website of the Computer Society, PUP Sto. Tomas Campus.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Society STC </title>
+  <meta name="description" content="Official website of the Computer Society, PUP Sto. Tomas Campus.">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-<!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/shared.css">
-<link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/modal.css">
 
-<link rel="icon" type="image/png" sizes="32x32" href="assets/comsoc-logo-tab.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/comsoc-logo-tab.png">
 </head>
+
 <body>
 
-<!-- Ambient animated background -->
-<div class="ambient-bg">
-  <div class="blob blob-green-1"></div>
-  <div class="blob blob-gold-1"></div>
-  <div class="blob blob-green-2"></div>
-  <div class="blob blob-gold-2"></div>
-  <div class="blob blob-green-3"></div>
-</div>
-
-<div class="page-shell">
-
-  <!-- NAVBAR -->
-  <nav class="navbar-comsoc" id="mainNav">
-    <div class="nav-inner">
-      <a href="#home" class="brand">
-        <img src="assets/comsoc-nav-logo.png" alt="Computer Society Logo" class="brand-mark">
-      </a>
-
-      <ul class="nav-links d-none d-lg-flex">
-        <li><a href="index.html#home" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#events">Event</a></li>
-        <li><a href="index.html#news">News</a></li>
-        <li><a href="officer.html">Executive Board</a></li>
-        <li><a href="index.html#structure">Committees</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="https://pupstc.github.io/organisations/academic/comsoc/tcs/">Publication</a></li>
-      </ul>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile menu -->
-  <div class="glass" id="mobileMenu" style="display:none; position:fixed; top:88px; left:16px; right:16px; z-index:999; padding:20px;">
-    <ul class="d-flex flex-column gap-1">
-      <li><a href="index.html#home" class="d-block py-2 px-3 rounded-3">Home</a></li>
-      <li><a href="about.html" class="d-block py-2 px-3 rounded-3">About</a></li>
-      <li><a href="index.html#events" class="d-block py-2 px-3 rounded-3">Event</a></li>
-      <li><a href="index.html#news" class="d-block py-2 px-3 rounded-3">News</a></li>
-      <li><a href="officer.html" class="d-block py-2 px-3 rounded-3">Executive Board</a></li>
-      <li><a href="index.html#structure" class="d-block py-2 px-3 rounded-3">Committees</a></li>
-      <li><a href="history.html" class="d-block py-2 px-3 rounded-3">History</a></li>
-      <li><a href="https://pupstc.github.io/organisations/academic/comsoc/tcs/" class="d-block py-2 px-3 rounded-3">Publication</a></li>
-    </ul>
+  <!-- Ambient animated background -->
+  <div class="ambient-bg">
+    <div class="blob blob-green-1"></div>
+    <div class="blob blob-gold-1"></div>
+    <div class="blob blob-green-2"></div>
+    <div class="blob blob-gold-2"></div>
+    <div class="blob blob-green-3"></div>
   </div>
 
-  <!-- HERO -->
-  <header class="hero" id="home">
-    <div class="container-xl-custom">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6 hero-text-col">
-          <div class="hero-eyebrow">COMPUTER SOCIETY STO.TOMAS CAMPUS</div>
-          <h1 class="hero-title reveal">
-            <span class="line-1">SULONG LABAN,</span>
-            <span class="line-2">COMSOC FIGHT!</span>
-        </h1>
-        <p class="hero-desc reveal">
-            United by passion and driven by excellence, the Computer Society
-            cultivates future-ready professionals through technology,
-            leadership, and service.
-        </p>
-          <div class="hero-cta reveal">
-            <a href="https://www.facebook.com/PUPSTCCS" class="btn-solid">Visit Page <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="index.html#about" class="btn-outline-comsoc">About</a>
-          </div>
-        </div>
+  <div class="page-shell">
 
-        <div class="col-lg-6 hero-seal-col">
-          <div class="hero-seal-wrap reveal">
+    <!-- NAVBAR -->
+    <nav class="navbar-comsoc" id="mainNav">
+      <div class="nav-inner">
+        <a href="#home" class="brand">
+          <img src="assets/comsoc-nav-logo.png" alt="Computer Society Logo" class="brand-mark">
+        </a>
+
+        <ul class="nav-links d-none d-lg-flex">
+          <li><a href="index.html#home" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#events">Event</a></li>
+          <li><a href="index.html#news">News</a></li>
+          <li><a href="officer.html">Executive Board</a></li>
+          <li><a href="officer.html#committeeHeads">Committees</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="https://pupstc.github.io/organisations/academic/comsoc/tcs/">Publication</a></li>
+        </ul>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="glass" id="mobileMenu"
+      style="display:none; position:fixed; top:88px; left:16px; right:16px; z-index:999; padding:20px;">
+      <ul class="d-flex flex-column gap-1">
+        <li><a href="index.html#home" class="d-block py-2 px-3 rounded-3">Home</a></li>
+        <li><a href="about.html" class="d-block py-2 px-3 rounded-3">About</a></li>
+        <li><a href="index.html#events" class="d-block py-2 px-3 rounded-3">Event</a></li>
+        <li><a href="index.html#news" class="d-block py-2 px-3 rounded-3">News</a></li>
+        <li><a href="officer.html" class="d-block py-2 px-3 rounded-3">Executive Board</a></li>
+        <li><a href="officer.html#committeeHeads" class="d-block py-2 px-3 rounded-3">Committees</a></li>
+        <li><a href="history.html" class="d-block py-2 px-3 rounded-3">History</a></li>
+        <li><a href="https://pupstc.github.io/organisations/academic/comsoc/tcs/"
+            class="d-block py-2 px-3 rounded-3">Publication</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+      <div class="container-xl-custom">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-text-col">
+            <div class="hero-eyebrow">COMPUTER SOCIETY STO.TOMAS CAMPUS</div>
+            <h1 class="hero-title reveal">
+              <span class="line-1">SULONG LABAN,</span>
+              <span class="line-2">COMSOC FIGHT!</span>
+            </h1>
+            <p class="hero-desc reveal">
+              United by passion and driven by excellence, the Computer Society
+              cultivates future-ready professionals through technology,
+              leadership, and service.
+            </p>
+            <div class="hero-cta reveal">
+              <a href="https://www.facebook.com/PUPSTCCS" class="btn-solid">Visit Page <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="index.html#about" class="btn-outline-comsoc">About</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 hero-seal-col">
+            <div class="hero-seal-wrap reveal">
 
               <img src="assets/comsoc-logo.png" alt="Computer Society Seal">
             </div>
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </header>
 
   <!-- QUICK LINKS  -->
@@ -135,7 +142,9 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</div>
         <h2 class="section-title">Vision, Mission &amp; <em>Core Values</em></h2>
-        <p class="section-desc">Guided by the Polytechnic University of the Philippines' commitment to inclusive, equitable, and globally relevant education, the Computer Society upholds these principles in every program it undertakes.</p>
+        <p class="section-desc">Guided by the Polytechnic University of the Philippines' commitment to inclusive,
+          equitable, and globally relevant education, the Computer Society upholds these principles in every program it
+          undertakes.</p>
       </div>
 
       <div class="row g-4">
@@ -150,14 +159,16 @@
           <div class="pillar-card glass glass-hover">
             <div class="pillar-icon"><i class="fa-solid fa-bullseye fa-lg"></i></div>
             <div class="pillar-title">Mission</div>
-            <p class="pillar-text">Advance an inclusive, equitable, and globally relevant polytechnic education towards national development.</p>
+            <p class="pillar-text">Advance an inclusive, equitable, and globally relevant polytechnic education towards
+              national development.</p>
           </div>
         </div>
         <div class="col-md-4 reveal">
           <div class="pillar-card glass glass-hover">
             <div class="pillar-icon"><i class="fa-solid fa-gem fa-lg"></i></div>
             <div class="pillar-title">Core Values — INSPIRED</div>
-            <p class="pillar-text">Integrity and Accountability, Nationalism, Sense of Service, Passion for Learning and Innovation, Inclusivity, Respect for Human Rights and the Environment, Excellence, and Democracy.</p>
+            <p class="pillar-text">Integrity and Accountability, Nationalism, Sense of Service, Passion for Learning and
+              Innovation, Inclusivity, Respect for Human Rights and the Environment, Excellence, and Democracy.</p>
           </div>
         </div>
       </div>
@@ -170,22 +181,29 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">Computer Society</div>
         <h2 class="section-title">About the <em>Organization</em></h2>
-        <p class="section-desc">Learn about the Computer Society, its history, purpose, and commitment to fostering innovation, leadership, and academic excellence.</p>
+        <p class="section-desc">Learn about the Computer Society, its history, purpose, and commitment to fostering
+          innovation, leadership, and academic excellence.</p>
       </div>
 
       <!-- Legacy -->
       <div class="row g-4 align-items-stretch">
         <div class="col-lg-5 reveal">
           <div class="legacy-media">
-            <img src="assets/comsoc-about.jpg" alt="Computer Society legacy seal">
+            <img src="assets/comsoc-about.jpg" alt="Computer Society legacy seal" class="legacy-img">
+            <video class="legacy-video" src="assets/comsoc-about.mp4" loop playsinline preload="metadata"></video>
           </div>
         </div>
         <div class="col-lg-7 reveal">
           <div class="legacy-copy glass glass-hover h-100 p-4 p-lg-5 d-flex flex-column justify-content-center">
             <div class="section-eyebrow">Our Story</div>
             <h3 class="pillar-title mb-3" style="font-size:1.4rem;">Legacy of the Computer Society</h3>
-            <p>For over three decades, the Computer Society has served as the academic and technical home of IT students at PUP Sto. Tomas Campus. What began as a small circle of computing enthusiasts has grown into a full-fledged organization anchoring seminars, competitions, and outreach programs across the university.</p>
-            <p>Guided by generations of student leaders and faculty advisers, COMSOC continues to champion academic excellence, industry readiness, and a culture of service — values reflected in every initiative it undertakes, from technical bootcamps to community-driven digital literacy drives.</p>
+            <p>For over three decades, the Computer Society has served as the academic and technical home of IT students
+              at PUP Sto. Tomas Campus. What began as a small circle of computing enthusiasts has grown into a
+              full-fledged organization anchoring seminars, competitions, and outreach programs across the university.
+            </p>
+            <p>Guided by generations of student leaders and faculty advisers, COMSOC continues to champion academic
+              excellence, industry readiness, and a culture of service — values reflected in every initiative it
+              undertakes, from technical bootcamps to community-driven digital literacy drives.</p>
             <a href="about.html" class="btn-outline-comsoc align-self-start mt-2">Learn More</a>
           </div>
         </div>
@@ -199,11 +217,13 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">Leadership</div>
         <h2 class="section-title">Executive <em>Board</em></h2>
-        <p class="section-desc">Meet the dedicated student leaders who guide the organization toward achieving its goals.</p>
+        <p class="section-desc">Meet the dedicated student leaders who guide the organization toward achieving its
+          goals.</p>
       </div>
 
       <div class="eb-carousel reveal">
-        <button class="eb-arrow glass" id="ebPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="eb-arrow glass" id="ebPrev" aria-label="Previous"><i
+            class="fa-solid fa-chevron-left"></i></button>
 
         <div class="eb-card glass" id="ebCard">
           <!-- content injected by JS -->
@@ -225,7 +245,8 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">Faculty Guidance</div>
         <h2 class="section-title">IT Professor &amp; <em>COMSOC Adviser</em></h2>
-        <p class="section-desc">The faculty behind the organization — an IT professor providing mentorship, institutional oversight, and academic guidance to every COMSOC program.</p>
+        <p class="section-desc">The faculty behind the organization — an IT professor providing mentorship,
+          institutional oversight, and academic guidance to every COMSOC program.</p>
       </div>
 
       <div class="row g-4 justify-content-center" id="adviserGrid"></div>
@@ -238,7 +259,8 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">How We're Organized</div>
         <h2 class="section-title">Organizational <em>Structure</em></h2>
-        <p class="section-desc">Discover the committees and leadership framework that support the organization's programs, events, and initiatives.</p>
+        <p class="section-desc">Discover the committees and leadership framework that support the organization's
+          programs, events, and initiatives.</p>
       </div>
 
       <div class="row g-4" id="committeeGrid"></div>
@@ -251,7 +273,8 @@
       <div class="section-header reveal">
         <div class="section-eyebrow">Stay Updated</div>
         <h2 class="section-title">News &amp; <em>Announcements</em></h2>
-        <p class="section-desc">Stay informed with the latest updates, important notices, and organization-wide announcements.</p>
+        <p class="section-desc">Stay informed with the latest updates, important notices, and organization-wide
+          announcements.</p>
       </div>
 
       <div class="row g-4" id="newsGrid"></div>
@@ -268,7 +291,8 @@
       <div class="section-header reveal">
         <div class="section-eyebrow">What's Happening</div>
         <h2 class="section-title">Events &amp; <em>Activities</em></h2>
-        <p class="section-desc">Explore the seminars, workshops, competitions, outreach programs, and other activities organized by COMSOC.</p>
+        <p class="section-desc">Explore the seminars, workshops, competitions, outreach programs, and other activities
+          organized by COMSOC.</p>
       </div>
 
       <div class="row g-4" id="eventsGrid"></div>
@@ -281,74 +305,92 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">Milestones</div>
         <h2 class="section-title">Achievements</h2>
-        <p class="section-desc">Celebrating the milestones, awards, and accomplishments of the Computer Society and its members.</p>
+        <p class="section-desc">Celebrating the milestones, awards, and accomplishments of the Computer Society and its
+          members.</p>
       </div>
 
       <div class="row g-4" id="achievementsGrid"></div>
     </div>
   </section>
 
-<!-- SENTINELS ESPORTS -->
-<section id="sentinels">
-  <div class="container-xl-custom">
-    <div class="sentinels-panel glass reveal">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <div class="sentinels-mark"><img src="assets/sen-esport-logo.png" alt="Sentinel Esports mark"></div>
-          <div class="section-eyebrow">Comsoc Team</div>
-          <h2 class="section-title mb-3">Sentinel <em>Esports</em></h2>
-          <p class="section-desc mb-0">The official esports team of the Computer Society, proudly representing PUP Sto. Tomas Campus in collegiate gaming competitions across multiple titles and leagues.</p>
-          <div class="sentinels-stats">
-            <div class="sentinels-stat"><div class="n">6</div><div class="l">Active Rosters</div></div>
-            <div class="sentinels-stat"><div class="n">12+</div><div class="l">Tournaments</div></div>
-            <div class="sentinels-stat"><div class="n">2026</div><div class="l">New Jersey</div></div>
+  <!-- SENTINELS ESPORTS -->
+  <section id="sentinels">
+    <div class="container-xl-custom">
+      <div class="sentinels-panel glass reveal">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="sentinels-mark"><img src="assets/sen-esport-logo.png" alt="Sentinel Esports mark"></div>
+            <div class="section-eyebrow">Comsoc Team</div>
+            <h2 class="section-title mb-3">Sentinel <em>Esports</em></h2>
+            <p class="section-desc mb-0">The official esports team of the Computer Society, proudly representing PUP
+              Sto. Tomas Campus in collegiate gaming competitions across multiple titles and leagues.</p>
+            <div class="sentinels-stats">
+              <div class="sentinels-stat">
+                <div class="n">6</div>
+                <div class="l">Active Rosters</div>
+              </div>
+              <div class="sentinels-stat">
+                <div class="n">12+</div>
+                <div class="l">Tournaments</div>
+              </div>
+              <div class="sentinels-stat">
+                <div class="n">2026</div>
+                <div class="l">New Jersey</div>
+              </div>
+            </div>
+            <a href="#" class="btn-solid mt-4 disabled" aria-disabled="true" tabindex="-1">
+              Meet the Team <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-          <a href="#"
- class="btn-solid mt-4 disabled"
- aria-disabled="true"
- tabindex="-1">
-  Meet the Team <i class="fa-solid fa-arrow-right"></i>
-</a>
-        </div>
-        <div class="col-lg-6">
-          <div class="jersey-mock">
-            <img src="assets/sentinels/jersey-2026.jpg" alt="Sentinel Esports Jersey" class="jersey-img">
+          <div class="col-lg-6">
+            <div class="jersey-mock">
+              <img src="assets/sentinels/jersey-2026.jpg" alt="Sentinel Esports Jersey" class="jersey-img">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- THE CLOUD SENTINEL PUBLICATION -->
-<section id="cloudsentinel">
-  <div class="container-xl-custom">
-    <div class="sentinels-panel glass reveal">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <div class="sentinels-mark"><img src="assets/sen-cloud-logo.png" alt="The Cloud Sentinel mark"></div>
-          <div class="section-eyebrow">Comsoc Publication</div>
-          <h2 class="section-title mb-3">The Cloud <em>Sentinel</em></h2>
-          <p class="section-desc mb-0">The official publication of the Computer Society, documenting the organization's stories, achievements, and the issues that matter to its members through editorials, features, and campus reporting.</p>
-          <div class="sentinels-stats">
-            <div class="sentinels-stat"><div class="n">4+</div><div class="l">Issues Released</div></div>
-            <div class="sentinels-stat"><div class="n">30+</div><div class="l">Articles Published</div></div>
-            <div class="sentinels-stat"><div class="n">2026</div><div class="l">Current Volume</div></div>
+  <!-- THE CLOUD SENTINEL PUBLICATION -->
+  <section id="cloudsentinel">
+    <div class="container-xl-custom">
+      <div class="sentinels-panel glass reveal">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="sentinels-mark"><img src="assets/sen-cloud-logo.png" alt="The Cloud Sentinel mark"></div>
+            <div class="section-eyebrow">Comsoc Publication</div>
+            <h2 class="section-title mb-3">The Cloud <em>Sentinel</em></h2>
+            <p class="section-desc mb-0">The official publication of the Computer Society, documenting the
+              organization's stories, achievements, and the issues that matter to its members through editorials,
+              features, and campus reporting.</p>
+            <div class="sentinels-stats">
+              <div class="sentinels-stat">
+                <div class="n">4+</div>
+                <div class="l">Issues Released</div>
+              </div>
+              <div class="sentinels-stat">
+                <div class="n">30+</div>
+                <div class="l">Articles Published</div>
+              </div>
+              <div class="sentinels-stat">
+                <div class="n">2026</div>
+                <div class="l">Current Volume</div>
+              </div>
+            </div>
+            <a href="https://pupstc.github.io/organisations/academic/comsoc/tcs/" class="btn-solid mt-4">
+              Read Articles <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-          <a href="https://pupstc.github.io/organisations/academic/comsoc/tcs/"
- class="btn-solid mt-4">
-  Read Articles <i class="fa-solid fa-arrow-right"></i>
-</a>
-        </div>
-        <div class="col-lg-6">
-          <div class="publication-mock">
-            <img src="assets/sentinels/cloud.png" alt="The Cloud Sentinel Cover" class="publication-img">
+          <div class="col-lg-6">
+            <div class="publication-mock">
+              <img src="assets/sentinels/cloud.png" alt="The Cloud Sentinel Cover" class="publication-img">
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- GALLERY -->
   <section id="gallery">
@@ -356,14 +398,16 @@
       <div class="section-header center reveal mx-auto">
         <div class="section-eyebrow justify-content-center">Moments</div>
         <h2 class="section-title">Gallery</h2>
-        <p class="section-desc">Relive memorable moments through photos capturing the organization's events, activities, and achievements.</p>
+        <p class="section-desc">Relive memorable moments through photos capturing the organization's events, activities,
+          and achievements.</p>
       </div>
 
       <div class="gallery-track-wrap reveal">
         <div class="gallery-track" id="galleryTrack"></div>
       </div>
       <div class="gallery-controls">
-        <button class="eb-arrow glass" id="galPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="eb-arrow glass" id="galPrev" aria-label="Previous"><i
+            class="fa-solid fa-chevron-left"></i></button>
         <button class="eb-arrow glass" id="galNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
@@ -379,9 +423,12 @@
               <a href="#home" class="brand">
                 <img src="assets/comsoc-nav-logo.png" alt="Computer Society Logo" class="brand-mark">
               </a>
-              <span style="font-family:var(--ff-display); font-weight:600; color:var(--ink-0); font-size:1.05rem;">Computer Society</span>
+              <span
+                style="font-family:var(--ff-display); font-weight:600; color:var(--ink-0); font-size:1.05rem;">Computer
+                Society</span>
             </div>
-            <p class="footer-desc">Reach out to the Computer Society for inquiries, collaborations, and official communications.</p>
+            <p class="footer-desc">Reach out to the Computer Society for inquiries, collaborations, and official
+              communications.</p>
             <div class="social-row">
               <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -413,7 +460,8 @@
           <div class="col-lg-4">
             <div class="footer-heading">Get in Touch</div>
             <ul class="footer-contact">
-              <li><i class="fa-solid fa-location-dot"></i> A. Bonifacio St, Matandang Balara, Santo Tomas, 4234 Batangas</li>
+              <li><i class="fa-solid fa-location-dot"></i> A. Bonifacio St, Matandang Balara, Santo Tomas, 4234 Batangas
+              </li>
               <li><i class="fa-solid fa-envelope"></i> @pup.edu.ph</li>
             </ul>
           </div>
@@ -427,75 +475,101 @@
     </div>
   </footer>
 
-</div>
+  </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-<script src="js/data.js"></script>
-<script src="js/shared.js"></script>
-<script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/script.js"></script>
 
 
-<div class="modal fade" id="newsModal" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal fade" id="newsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content news-modal p-5">
 
-          <div class="modal-header border-0">
-              <button class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-header border-0">
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <img id="modalNewsImage" class="news-modal-image" src="" alt="">
+
+          <div class="news-modal-meta mt-4">
+            <span id="modalNewsTag"></span>
+            <span class="mx-2">•</span>
+            <span id="modalNewsDate"></span>
           </div>
 
-          <div class="modal-body">
+          <h2 id="modalNewsTitle" class="mt-3"></h2>
 
-              <img id="modalNewsImage" class="news-modal-image" src="" alt="">
+          <div id="modalNewsDesc" class="news-modal-desc mt-4"></div>
 
-              <div class="news-modal-meta mt-4">
-                  <span id="modalNewsTag"></span>
-                  <span class="mx-2">•</span>
-                  <span id="modalNewsDate"></span>
-              </div>
-
-              <h2 id="modalNewsTitle" class="mt-3"></h2>
-
-              <div id="modalNewsDesc" class="news-modal-desc mt-4"></div>
-
-          </div>
+        </div>
 
       </div>
+    </div>
   </div>
-</div>
 
 
-<div class="modal fade" id="eventModal" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal fade" id="eventModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content news-modal  p-5">
 
-          <div class="modal-header border-0">
-              <button class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-header border-0">
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <img id="modalEventImage" class="news-modal-image" src="" alt="">
+
+          <div class="news-modal-meta mt-4">
+            <span id="modalEventTag"></span>
           </div>
 
-          <div class="modal-body">
+          <h2 id="modalEventTitle" class="mt-3"></h2>
 
-              <img id="modalEventImage" class="news-modal-image" src="" alt="">
-
-              <div class="news-modal-meta mt-4">
-                  <span id="modalEventTag"></span>
-              </div>
-
-              <h2 id="modalEventTitle" class="mt-3"></h2>
-
-              <div class="event-modal-meta mt-3">
-                  <span><i class="fa-solid fa-location-dot"></i> <span id="modalEventLocation"></span></span>
-                  <span><i class="fa-solid fa-calendar"></i> <span id="modalEventDate"></span></span>
-                  <span><i class="fa-solid fa-clock"></i> <span id="modalEventTime"></span></span>
-              </div>
-
-              <div id="modalEventDesc" class="news-modal-desc mt-4"></div>
-
+          <div class="event-modal-meta mt-3">
+            <span><i class="fa-solid fa-location-dot"></i> <span id="modalEventLocation"></span></span>
+            <span><i class="fa-solid fa-calendar"></i> <span id="modalEventDate"></span></span>
+            <span><i class="fa-solid fa-clock"></i> <span id="modalEventTime"></span></span>
           </div>
+
+          <div id="modalEventDesc" class="news-modal-desc mt-4"></div>
+
+        </div>
 
       </div>
+    </div>
   </div>
-</div>
+
+  <div class="modal fade" id="galleryModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content news-modal p-3">
+  
+        <div class="modal-header border-0">
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body pt-0">
+          <div class="gallery-modal-media">
+            <img id="modalGalleryImage" class="news-modal-image" src="" alt="" style="height:auto; max-height:75vh;">
+  
+            <button class="eb-arrow glass gallery-modal-arrow gallery-modal-prev" id="galleryModalPrev" aria-label="Previous">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="eb-arrow glass gallery-modal-arrow gallery-modal-next" id="galleryModalNext" aria-label="Next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
 
 
 </body>
+
 </html>
